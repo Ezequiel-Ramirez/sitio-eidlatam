@@ -7,7 +7,12 @@
     <title>EID LATAM</title>
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- javascript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -59,11 +64,106 @@
     </section>
 </main>
 <!-- slider -->
+<h2>NUESTROS CURSOS</h2>
 <section class="slider-cursos">
-    <h2>NUESTROS CURSOS</h2>
-
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>01</h3>
+                    <div class="sliderImg">
+                    </div>
+                    <div class="content">
+                        <p>Redes sociales en el deporte</p>
+                        <p>La importancia de tener una gestión eficaz en las redes sociales para las instituciones deportivas y para los deportistas. Todo un desafío para captar mayores seguidores, fidelizarlos, lograr monetización y patrocinios. En esta capacitación vamos a ver cómo generar y planificar los contenidos para conseguirlo.</p>
+                        <a href="#">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>02</h3>
+                    <div class="sliderImg">
+                        </div>
+                    <div class="content">
+                        <p>Marketing Deportivo</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex in itaque sed reprehenderit unde corrupti nihil, necessitatibus iusto. Voluptates deleniti quos consequatur tempore molestiae accusamus distinctio, dolor quam sequi!</p>
+                        <a href="#">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>03</h3>
+                    <div class="sliderImg">
+                        </div>
+                    <div class="content">
+                        <p>E-Sports</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex in itaque sed reprehenderit unde corrupti nihil, necessitatibus iusto. Voluptates deleniti quos consequatur tempore molestiae accusamus distinctio, dolor quam sequi!</p>
+                        <a href="#">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>04</h3>
+                    <div class="sliderImg">
+                        </div>
+                    <div class="content">
+                        <p>Titulo del curso</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex in itaque sed reprehenderit unde corrupti nihil, necessitatibus iusto. Voluptates deleniti quos consequatur tempore molestiae accusamus distinctio, dolor quam sequi!</p>
+                        <a href="#">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>05</h3>
+                    <div class="sliderImg">
+                        <img src="" alt="">
+                        </div>
+                    <div class="content">
+                        <p>Titulo del curso</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex in itaque sed reprehenderit unde corrupti nihil, necessitatibus iusto. Voluptates deleniti quos consequatur tempore molestiae accusamus distinctio, dolor quam sequi!</p>
+                        <a href="#">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>06</h3>
+                    <div class="sliderImg">
+                        </div>
+                    <div class="content">
+                        <p>Titulo del curso</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex in itaque sed reprehenderit unde corrupti nihil, necessitatibus iusto. Voluptates deleniti quos consequatur tempore molestiae accusamus distinctio, dolor quam sequi!</p>
+                        <a href="#">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </div>
 </section>
 <!-- fin slider -->
-    
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
 </body>
 </html>
