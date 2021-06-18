@@ -112,10 +112,11 @@ main{
 #presentation div:nth-child(2) h5{
     color: #A4C207 ;
     font-size: 1rem;
+    margin-bottom: 0;
 }
 
 #presentation div:nth-child(2) ul{
-    padding: 20px 20px 20px 40px;
+    padding: 10px 20px 20px 40px;
     list-style-type: circle;
     color: #A4C207;
     
@@ -124,6 +125,7 @@ main{
     width: 320px;
     color: #F3F3F3;
     font-size: 1.125rem;
+    line-height: normal;
     margin-bottom: 15px;
 }
 #presentation div:last-child{
@@ -260,6 +262,35 @@ margin-top: 91px;
 }
 .swiper-slide:nth-child(6) .card .content p{
     color: #FFFFFF;
+}
+/* TESTIMONIALS */
+.testimonials{
+    width: 100%;
+}
+.testimonials h2{
+    margin-top: 34px;
+}
+.card-testimonial{
+    width: 536px;
+    height: 274;
+    border: 1px solid #707070;
+    padding: 15px;
+    background-color: #03091E;
+    color: #EEEEEE;
+    font-size: 1.063rem;
+    text-align: center;
+}
+.card-testimonial img{
+    width: 51px;
+    height: 51px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+}
+.card-testimonial p:first-of-type{
+    color: #A3FF40 ;
+    text-align: left;
+    margin-left: 15px;
 }
 
 
