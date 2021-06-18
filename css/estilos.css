@@ -9,6 +9,7 @@
 body{
     width: 100%;
 }
+
 /* header */
 .header{
     background-color: #03091E;
@@ -32,8 +33,13 @@ body{
     text-decoration: none;
 }
 .logo{
-    font-size: 14px;
-    text-align: center;
+    width: 124px;
+    height: 51px;
+}
+.logo img{
+    margin-top: 3px;
+    width: 124px;
+    height: 51px;
 }
 .menu{
     position: absolute;
@@ -48,7 +54,7 @@ body{
     height: 0;
     overflow: hidden;
     transition: .36s ease;
-    font-size: 17px;
+    font-size: 14px;
     list-style: none;
 }
 #header:target .menu{
@@ -63,7 +69,6 @@ body{
 .close, .icon-usuario-carrito{
     display: none;
 }
-
 
 main{
     background-color: #03091E;
@@ -261,23 +266,23 @@ margin-top: 91px;
 
 /* MEDIA QUERIES */
 @media (min-width: 900px){
-    .header .menu-movile{
-        margin: 0 0 0 3rem;
-    }
     .header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 12% 0 0;
         height: 5rem;
     }
     .menu{
         height: auto;
         position: static;
+        margin-right: 75px;
         justify-content: center;
         flex-direction: row;
-        padding: 0 20px 0 0;
+        padding: auto;
         width: 60vw;
+    }
+    .logo{
+        margin-left: 22px;
     }
     .menu a{
         padding: 0 20px;
@@ -287,5 +292,9 @@ margin-top: 91px;
     }
     .icon-usuario-carrito{
         display: flex;
+        margin-right: 60px;
+    }
+    .icon-usuario-carrito a{
+        margin: 0 7px;
     }
 }
