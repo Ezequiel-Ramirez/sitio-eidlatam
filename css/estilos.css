@@ -178,13 +178,13 @@ margin-top: 91px;
 .card .content p:first-of-type{
     font-weight: bold;
 }
-.card .content a{
+.card .content button{
     display: inline-block;
     margin: 10px 0 0;
     padding: 10px 20px;
-    text-decoration: none;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
+    background-color: transparent;
 }
 
 .card .sliderImg{
@@ -291,6 +291,75 @@ margin-top: 91px;
     color: #A3FF40 ;
     text-align: left;
     margin-left: 15px;
+}
+/* detalle */
+.detail{
+    width: 100%;
+    height: 558px;
+    padding-top: 35px;
+    margin-top: -60px;
+}
+.detail-1{
+    background-color: #E31837 ;
+    display: none;
+}
+.detail-2{
+    background-color: #b97105 ;
+    display: none;
+}
+.detail-3{
+    background-color: #c0a80e ;
+    display: none;
+}
+.detail-4{
+    background-color: #62a52f ;
+    display: none;
+}
+.detail-5{
+    background-color: #7f4cc2 ;
+    display: none;
+}
+.detail-6{
+    background-color: #0975a7;
+    display: none;
+}
+.detail-container-1{
+    width: 1088px;
+    height: 484px;
+    margin: 0px auto;
+    border: 1px solid;
+    background-color: #FFFFFF;
+    
+}
+
+.detail-container-1 div:first-child{
+    background-image: url(../img/SliderCursos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.detail-container div:first-child{
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+}
+.detail-container div:first-child button{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    color:black;
+    font-size: 34px;
+    font-weight: bold;
+
+}
+.detail-container div:last-child{
+    color: black;
+    width: 100%;
+    padding: 20px;
+}
+.detail-container div:last-child h6{
+    font-weight: bolder;
 }
 
 
