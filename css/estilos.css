@@ -269,7 +269,7 @@ margin-top: 91px;
 }
 .card-testimonial{
     width: 536px;
-    height: 274;
+    height: 290px;
     border: 1px solid #707070;
     padding: 15px;
     background-color: #03091E;
@@ -287,7 +287,6 @@ margin-top: 91px;
 .card-testimonial p:first-of-type{
     color: #A3FF40 ;
     text-align: left;
-    margin-left: 15px;
 }
 /* detalle */
 .detail{
@@ -362,6 +361,52 @@ margin-top: 91px;
     font-weight: bolder;
 }
 
+/* destinatarios */
+.destination{
+    width: 1088px;
+    height: 573px;
+    padding: 20px 92px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #03091E;
+    color: #E2E2E2;
+}
+.destination div:first-child{
+    width: 100%;
+    padding-right: 30px;
+    font-size: 1.313rem;
+}
+
+.destination div:first-child h3{
+    font-size: 2.563rem;
+    color: #A3FF40;
+    letter-spacing: 2.05px;
+    margin-bottom: 25px;
+}
+.destination div:first-child button{
+    width: 168px;
+    height: 48px;
+    background-color: #82D940;
+    border-color: #707070;
+    border-radius: 37px;
+    color: #EFF0F1;
+    margin-top: 25px;
+}
+.destination div:last-child{
+    width: 100%;
+    font-size: 1.063rem;
+}
+.destination div:last-child ol{
+    list-style-position: inside;
+    list-style-type: lower-alpha;
+  
+}
+.destination div:last-child ol li{
+    margin-bottom: 12px;
+    line-height: 20px;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 900px){
