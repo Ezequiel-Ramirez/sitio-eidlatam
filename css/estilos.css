@@ -412,7 +412,67 @@ margin-top: 91px;
     margin-bottom: 12px;
     line-height: 20px;
 }
+/* autoridades */
+.autoridades, .organizan{
+    width: 100%;
+    padding: 35px 139px;
+}
+.autoridades h3, .organizan h3{
+    font-size: 2.625rem;
+    font-weight: bold;
+    color: #03091E;
+}
+.autoridades p, .organizan p{
+    font-size: 1.063rem;
+    color: #202020;
+    line-height: 20px;
+}
+.autoridades p:first-of-type{
+    color: #82D940;
+    font-size: 1.313rem;
+    margin-bottom: 0;
+}
+.autoridades img:first-child{
+    width: 372px;
+    height: 372px;
+    margin-top: 100px;
+}
+.autoridades .row:last-child img{
+    width: 174px;
+    height: 174px;
+    display: block;
+    border-radius: 100%;
+    margin: 10px auto;
+}
 
+/* organizan */
+.organizan #gridLogos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: auto;
+}
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+.organizan img{
+    width: 274px;
+    height: 127px;
+}
+
+.organizan h3{
+    text-align: right;
+}
+.organizan p:last-of-type{
+    font-weight: bold;
+}
+.organizan ul{
+    list-style-position: inside;
+}
 /* MEDIA QUERIES */
 @media (min-width: 900px){
     .header{
