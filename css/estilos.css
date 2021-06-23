@@ -360,28 +360,20 @@ margin-top: 91px;
 /* destinatarios */
 .destination{
     width: 80%;
-    height: 573px;
     padding: 20px 92px;
     margin: 35px auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: #03091E;
+    font-size: 1.063rem;
     color: #E2E2E2;
 }
-.destination div:first-child{
-    width: 100%;
-    padding-right: 30px;
-    font-size: 1.313rem;
-}
 
-.destination div:first-child h3{
+.destination h3{
     font-size: 2.563rem;
     color: #A3FF40;
     letter-spacing: 2.05px;
     margin-bottom: 25px;
 }
-.destination div:first-child button, .blog button, footer button{
+.destination button, .blog button, footer button{
     width: 168px;
     height: 48px;
     background-color: #82D940;
@@ -390,16 +382,8 @@ margin-top: 91px;
     color: #EFF0F1;
     margin-top: 25px;
 }
-.destination div:last-child{
-    width: 100%;
-    font-size: 1.063rem;
-}
-.destination div:last-child ol{
-    list-style-position: inside;
-    list-style-type: lower-alpha;
-  
-}
-.destination div:last-child ol li{
+
+.destination  ul li{
     margin-bottom: 12px;
     line-height: 20px;
 }
