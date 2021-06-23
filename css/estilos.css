@@ -223,30 +223,66 @@ margin-top: 91px;
 /* TESTIMONIALS */
 .testimonials{
     width: 100%;
+    height: 450px;
+    background-color: #03091E;
 }
 .testimonials h2{
-    margin-top: 34px;
+    color: #F3F3F3;
+    padding-left: 13%;
+    text-align: left;
+    margin-top: 0;
+}
+.testimonials h2 span{
+    font-weight: lighter;
+}
+.testimonials .carousel-control-next{
+    align-items: end;
+    width: 25px;
+    top: 17px;
+    left: 103%;
+} .testimonials .carousel-control-prev{
+    align-items: end;
+    width: 25px;
+    top: 17px;
+    left: 100%;
 }
 .card-testimonial{
-    width: 536px;
-    height: 290px;
-    border: 1px solid #707070;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
     padding: 15px;
     background-color: #03091E;
     color: #EEEEEE;
     font-size: 1.063rem;
-    text-align: center;
+    
+}
+.card-testimonial div:first-child{
+    width: 100%;
+    padding: 10px;
+}
+.card-testimonial div:last-child{
+    width: 100%;
+    padding: 0 10px;
+    background-color: #010513;
+}
+.card-testimonial div:last-child p{
+    color: #EEEEEE;
+    font-size: 1.063rem;
 }
 .card-testimonial img{
     width: 51px;
     height: 51px;
     border-radius: 100%;
-    float: left;
-    margin-right: 10px;
+    margin-bottom: 15px;
 }
 .card-testimonial p:first-of-type{
     color: #A3FF40 ;
-    text-align: left;
+}
+.card-testimonial p:nth-of-type(2){
+    color: #8B8B8B ;
+    font-size: 0.875rem;
+
 }
 /* detalle */
 .detail{
