@@ -76,78 +76,78 @@ body{
 }
 /* SLIDER CURSOS */
 .slider-cursos{
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* min-height: 100vh; */
-    width: 100%;
+    width: 80%;
     margin: 0px auto;
     position: relative;
-    background-image: url(../img/pagina-deportes.jpg);
-    padding: 20px;
-    /* z-index: 1; */
+    background-image: url(../img/fondo-cursos.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
 }
 
 
-h2{
+.slider-cursos h2{
 text-align: center;
 font-size: 2.625rem;
 font-weight: bold;
-margin-top: 91px;
+margin-bottom:  20px;
+color: #FFFFFF;
 }
 .card{
     position: relative;
     background: #fff;
-    width: 360px;
-    height: 488px;
+    width: 443px;
+    height: 483px;
     margin: 0 auto;
+    font-size: 1.063rem;
+    line-height: 20px;
     border: 1px solid #324554;
 }
-.card h3{
+.card .content h3{
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: bold;
-    
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 0;
 }
 .card .content{
     width: 100%;
-    min-height: 500px;
-    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+.card .content p{
+    padding: 0 15px;
 }
 .card .content p:first-of-type{
     font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0;
 }
 .card .content button{
     display: inline-block;
-    margin: 10px 0 0;
-    padding: 10px 20px;
-    border: 2px solid #141313;
-    color: #0a0909;
-    background-color: transparent;
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 0;
+    color: #FFFFFF;
 }
 
 .card .sliderImg{
     width: 100%;
-    min-height: 90px;
+    min-height: 174px;
     border: 1px solid #707070;
     background-image: url(../img/SliderCursos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
-
 }
-
 
 .swiper-container {
     width: 100%;
     height: 100%;
   }
 .swiper-slide{
-    
     text-align: center;
-   
-    
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -162,70 +162,49 @@ margin-top: 91px;
     -webkit-align-items: center;
     align-items: center;
 }
-/* .swiper-slide:nth-child(1) .card{
+.card1 h3{
+    color: #E31837;
+}
+.card1 button{
     background: #E31837;
 }
-.swiper-slide:nth-child(1) .card h3{
-    color: #E75A70;
-}
-.swiper-slide:nth-child(1) .card .content p{
-    color: #FFFFFF;
-}
-.swiper-slide:nth-child(1) .card .sliderImg{
-    background-image: url(../img/SliderCursos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.swiper-slide:nth-child(2) .card{
-    background: #b97105;
-}
-.swiper-slide:nth-child(2) .card h3{
+.card2 h3{
     color: #FF9C09;
 }
-.swiper-slide:nth-child(2) .card .content p{
-    color: #FFFFFF;
+.card2 button{
+    background: #FF9C09;
 }
-.swiper-slide:nth-child(3) .card{
+.card3 h3{
+    color: #c0a80e;
+}
+.card3 button{
     background: #c0a80e;
 }
-.swiper-slide:nth-child(3) .card h3{
-    color: #FFE017;
+.card4 h3{
+    color: #62a52f;
 }
-.swiper-slide:nth-child(3) .card .content p{
-    color: #FFFFFF;
-}
-.swiper-slide:nth-child(4) .card{
+.card4 button{
     background: #62a52f;
 }
-.swiper-slide:nth-child(4) .card h3{
-    color: #82D940;
+.card5 h3{
+    color: #7f4cc2;
 }
-.swiper-slide:nth-child(4) .card .content p{
-    color: #FFFFFF;
-}
-.swiper-slide:nth-child(5) .card{
+.card5 button{
     background: #7f4cc2;
 }
-.swiper-slide:nth-child(5) .card h3{
-    color: #975AE7;
-}
-.swiper-slide:nth-child(5) .card .content p{
-    color: #FFFFFF;
-}
-.swiper-slide:nth-child(6) .card{
-    background: #0975a7;
-}
-.swiper-slide:nth-child(6) .card h3{
+.card6 h3{
     color: #0A8ECD;
 }
-.swiper-slide:nth-child(6) .card .content p{
-    color: #FFFFFF;
-} */
+.card6 button{
+    background: #0A8ECD;
+}
+
 /* TESTIMONIALS */
 .testimonials{
     width: 100%;
     height: 450px;
     background-color: #03091E;
+    padding-top: 25px;
 }
 .testimonials h2{
     color: #F3F3F3;
@@ -370,6 +349,7 @@ margin-top: 91px;
 
 .destination h3{
     font-size: 2.563rem;
+    font-weight: bold;
     color: #A3FF40;
     letter-spacing: 2.05px;
     margin-bottom: 25px;
@@ -443,7 +423,7 @@ margin-top: 91px;
 .comunity{
     width: 100%;
     height: 520px;
-    background: url(../img/pagina-deportes.jpg) no-repeat  center;
+    background: url(../img/comunidad\ estadio2.jpg) no-repeat  center;
     background-size: cover;
     display: flex;
     flex-direction: column;

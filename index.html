@@ -19,11 +19,12 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
@@ -56,16 +57,16 @@
      
     
     <!-- slider -->
-    <h2>NUESTROS CURSOS</h2>
     <section class="slider-cursos">
+      <h2>NUESTROS CURSOS</h2>
       <div class="swiper-container mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="card">
+            <div class="card card1">
               <div class="sliderImg">
+              </div>
+              <div class="content">
               <h3>01</h3>
-            </div>
-            <div class="content">
               <p>Redes sociales en el deporte</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maiores harum quisquam voluptates iusto eum, id consequuntur suscipit. Provident dolorem sint exercitationem quaerat sunt deleniti fugit nostrum porro debitis rem.
@@ -75,12 +76,12 @@
             </div>
           </div></div>
           <div class="swiper-slide">
-            <div class="card">
+            <div class="card card2">
               <div class="sliderImg">
-                <h3>02</h3>
-
+                
               </div>
               <div class="content">
+                <h3>02</h3>
                 <p>Marketing Deportivo</p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -93,12 +94,12 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
+            <div class="card card3">
               <div class="sliderImg">
-                <h3>03</h3>
-
+                
               </div>
               <div class="content">
+                <h3>03</h3>
                 <p>E-Sports</p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -111,12 +112,12 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
+            <div class="card card4">
               <div class="sliderImg">
-                <h3>04</h3>
-
+                
               </div>
               <div class="content">
+                <h3>04</h3>
                 <p>Titulo del curso</p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -129,12 +130,11 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
+            <div class="card card5">
               <div class="sliderImg">
-                <h3>05</h3>
-                
               </div>
               <div class="content">
+                <h3>05</h3>
                 <p>Titulo del curso</p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -147,12 +147,12 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
+            <div class="card card6">
               <div class="sliderImg">
-                <h3>06</h3>
-
+                
               </div>
               <div class="content">
+                <h3>06</h3>
                 <p>Titulo del curso</p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -169,111 +169,7 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
-      <!-- <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card">
-              <h3>01</h3>
-              <div class="sliderImg"></div>
-              <div class="content">
-                <p>Redes sociales en el deporte</p>
-                <p>
-                  La importancia de tener una gestión eficaz en las redes
-                  sociales para las instituciones deportivas y para los
-                  deportistas. Todo un desafío para captar mayores seguidores,
-                  fidelizarlos, lograr monetización y patrocinios. En esta
-                  capacitación vamos a ver cómo generar y planificar los
-                  contenidos para conseguirlo.
-                </p>
-                <button id="btnCurso1">Ver detalles</button>
-                
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <h3>02</h3>
-              <div class="sliderImg"></div>
-              <div class="content">
-                <p>Marketing Deportivo</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique ex in itaque sed reprehenderit unde corrupti nihil,
-                  necessitatibus iusto. Voluptates deleniti quos consequatur
-                  tempore molestiae accusamus distinctio, dolor quam sequi!
-                </p>
-                <button id="btnCurso2">Ver detalles</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <h3>03</h3>
-              <div class="sliderImg"></div>
-              <div class="content">
-                <p>E-Sports</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique ex in itaque sed reprehenderit unde corrupti nihil,
-                  necessitatibus iusto. Voluptates deleniti quos consequatur
-                  tempore molestiae accusamus distinctio, dolor quam sequi!
-                </p>
-                <button id="btnCurso3">Ver detalles</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <h3>04</h3>
-              <div class="sliderImg"></div>
-              <div class="content">
-                <p>Titulo del curso</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique ex in itaque sed reprehenderit unde corrupti nihil,
-                  necessitatibus iusto. Voluptates deleniti quos consequatur
-                  tempore molestiae accusamus distinctio, dolor quam sequi!
-                </p>
-                <button id="btnCurso4">Ver detalles</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <h3>05</h3>
-              <div class="sliderImg">
-                <img src="" alt="" />
-              </div>
-              <div class="content">
-                <p>Titulo del curso</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique ex in itaque sed reprehenderit unde corrupti nihil,
-                  necessitatibus iusto. Voluptates deleniti quos consequatur
-                  tempore molestiae accusamus distinctio, dolor quam sequi!
-                </p>
-                <button id="btnCurso5">Ver detalles</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <h3>06</h3>
-              <div class="sliderImg"></div>
-              <div class="content">
-                <p>Titulo del curso</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique ex in itaque sed reprehenderit unde corrupti nihil,
-                  necessitatibus iusto. Voluptates deleniti quos consequatur
-                  tempore molestiae accusamus distinctio, dolor quam sequi!
-                </p>
-                <button id="btnCurso6">Ver detalles</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      
    
     <!-- fin slider -->
     <!-- ver dedalle -->
@@ -434,7 +330,7 @@
   <h3><span>NUESTRAS</span> AUTORIDADES</h3>
   <div class="row">
     <div class="col-md-3">
-      <img src="img/pablo-turiaci.jpg" alt="Pablo-Turiaci">
+      <img src="img/autoridades/pablo-turiaci.jpg" alt="Pablo-Turiaci">
       <p>Pablo Turiaci</p>
       <p>Disertante</p>
       <p>Periodista deportivo y productor de televisión, trabaja hace 14 años en el canal Tyc Sports. </p>
@@ -449,7 +345,7 @@
       <p>Cuenta con más de 30 años de experiencia en medios gráficos, radiales, televisivos y de internet.</p>
     </div>
     <div class="col-md-3">
-      <img src="img/alejandro.jpg" alt="Pablo-Turiaci">
+      <img src="img/autoridades/alejandro.jpg" alt="Pablo-Turiaci">
       <p>Alejandro Bustinza</p>
       <p>Descripción</p>
       <p>Periodista deportivo y productor de televisión, trabaja hace 14 años en el canal Tyc Sports. </p>
@@ -597,9 +493,9 @@
     <script src="js/funciones.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30,
-        slidesPerGroup: 3,
+        slidesPerGroup: 2,
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
@@ -612,24 +508,5 @@
         },
       });
     </script>
-    <!-- <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 60,
-          stretch: 0,
-          depth: 200,
-          modifier: 1,
-          slideShadows: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-
-    </script> -->
   </body>
 </html>
