@@ -1049,6 +1049,11 @@ nav ul li a:hover{
     color: #8B8B8B ;
     font-size: 0.8rem;
 }
+.testimonials .carousel-control-next{
+    display: none;
+} .testimonials .carousel-control-prev{
+    display: none;
+}
 /* autoridades */
 .autoridades, .organizan{
     padding: 35px 100px;
