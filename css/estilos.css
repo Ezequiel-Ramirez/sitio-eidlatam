@@ -16,7 +16,7 @@ header{
     top: 0;
     z-index: 100;
 }
-nav{
+header nav{
     display: flex;
     height: 80px;
     width: 100%;
@@ -38,17 +38,17 @@ nav{
 .logo-mobile{
     display: none;
 }
-nav ul{
+header nav ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     margin: auto;
 }
-nav ul li{
+header nav ul li{
     margin: 0 5px;
 }
-nav ul li a{
+header nav ul li a{
     color: #EFF0F1;
     text-decoration: none;
     justify-content: center;
@@ -58,8 +58,8 @@ nav ul li a{
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
-nav ul li a.active,
-nav ul li a:hover{
+header nav ul li a.active,
+header nav ul li a:hover{
     color: #03091E;
     background: #EFF0F1;
 }
@@ -183,7 +183,7 @@ input[type="checkbox"]{
 /* SLIDER CURSOS */
 .slider-cursos{
     width: 80%;
-    margin: 0px auto;
+    margin: 20px auto;
     position: relative;
     background-image: url(../img/fondo-cursos.jpg);
     background-size: cover;
@@ -570,6 +570,7 @@ color: #FFFFFF;
     align-items: center;
     color: #FFFFFF;
     text-align: center;
+    padding: 0 50px;
 }
 
 .comunity h2{
@@ -749,7 +750,6 @@ padding: 20px 0 0 130px;
     color: white;    
 }
 
-/* FOOTER */
 /* FOOTER */
 footer{
     width: 100%;
@@ -952,7 +952,7 @@ nav ul li a:hover{
     display: block;
     width: 100%;
     }
-.info-minima-texto h4,p{
+.info-minima-texto h4,.info-minima-texto p{
     width: 65%;
     margin: auto;
     display: flex;
@@ -966,4 +966,248 @@ nav ul li a:hover{
     margin: auto;
     margin-bottom: 10px;
     }
+}
+
+@media (max-width: 768px){
+    /* SLIDER CURSOS */
+.slider-cursos{
+    width: 100%;
+    padding: 50px;
+}
+
+.card .content h3{
+    font-size: 4rem;
+    padding-bottom: 0;
+}
+
+.card .content p{
+    padding: 0 15px;
+    font-size: 1rem;
+    line-height: normal;
+}
+.card .content p:first-of-type{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+.card .content button{
+    margin-top: 0px;
+}
+
+/* detalle */
+.detail{
+    padding: 30px;
+}
+
+.detail-container{
+    font-size: 1rem;
+}
+
+.detail-container div:first-child img{
+    height: 290px;
+    margin-bottom: 15px;
+}
+
+.detail-container div:last-child h3{
+    font-size: 4rem;
+}
+.detail-container div:last-child button{
+    margin: 10px 0 0 210px;
+}
+
+/* mensaje gris */
+#txt{
+    width: 100%;
+    font-size: 2rem;
+}
+
+/* TESTIMONIALS */
+.card-testimonial div:last-child p{
+    font-size: 1rem;
+    line-height: normal;
+}
+.w-75 {
+    width: 100%!important;
+}
+/* autoridades */
+.autoridades, .organizan{
+    padding: 35px 100px;
+}
+
+.autoridades p, .organizan p{
+    font-size: 1rem;
+}
+.autoridades img{
+    display: block;
+    width: 50%;
+    margin: 0 auto 20px;
+}
+/* comunidad */
+
+.comunity{
+    width: 100%;
+    height: 400px;
+}
+
+.comunity h2{
+    font-size: 4rem;
+}
+
+.comunity p:first-child{
+    font-size: 1.3rem;
+}
+.comunity p:last-child{
+    font-size: 1rem;
+    line-height: 27px;
+}
+
+/* blog section*/
+.blog{
+    padding: 30px 120px;
+}
+
+.blog-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+    font-size: 1rem;
+    line-height: normal;
+}
+    
+    .divblog1 { grid-area: 1 / 1 / 2 / 2; }
+    .divblog2 { grid-area: 2 / 1 / 3 / 2; }
+    .divblog3 { grid-area: 3 / 1 / 4 / 2; }
+    .divblog4 { grid-area: 1 / 2 / 4 / 3; }
+.divblog1 .img, .divblog2 .img, .divblog3 .img{
+    width: 140px;
+    height: 140px;
+    float: left;
+    margin-right: 10px;
+}
+.divblog4 .img{
+    width: 100%;
+    height: 250px;
+}
+.divblog3{
+    display: none;
+}
+.blog-container .blog-subtitulo, .page-blog .blog-subtitulo{
+    letter-spacing: normal;
+}
+.blog-container .blog-titulo, .page-blog .blog-titulo{
+    font-size: 2rem; 
+}
+/* BLOG PAGINA COMPLETA */
+.page-blog {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    font-size: 1rem;
+    padding: 30px 80px;
+}
+    
+.titulo-page-blog{
+font-size: 3rem;
+}
+
+.btnblogpage, .div-page-blog_2 input[type="submit"]{
+    display: block;
+    width: 160px;
+    height: 40px;
+    margin: 0 auto 20px;
+}
+
+.div-page-blog_2{
+    width: 100%;
+}
+
+.div-page-blog_2 input[type="submit"]{
+    margin-top: 50px ;
+}
+/* NEWSLETTER */
+.newsletter{
+    height: 240px;
+}
+#input input, #button-addon2{
+    font-size: 1.3rem;
+}
+/* FOOTER */
+footer{
+    height: 250px;
+    font-size: 0.8rem;
+    padding: 20px 120px;
+}
+
+footer div:first-child a img{
+    width: 115px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+#menuFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px;
+    color: white;
+    margin-bottom: 30px;
+}
+footer div:first-child p{
+    font-size: 10px;
+    padding-left: 10px;
+   
+}
+#copy{
+    padding-top: 100px;
+}
+#txtPago{
+    margin-left: 188px !important;
+}
+footer button{
+    margin: 0 0px;
+    margin-left: 190px;
+    width: 120px;
+}
+footer div:last-child p:first-of-type {
+    font-size: 1.5rem;
+    text-align: right;
+    line-height: normal;
+    
+}
+footer div:last-child p:last-of-type{
+    text-align: right;
+    clear: both;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.candados{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: right;
+    margin-top: 10px;
+    margin-left: auto;
+    
+}
+.candados img{
+    width: 10px;
+    height: 10px;  
+}
+.cards img{
+    width: 40px;
+    height: 40px;  
+}
+.redes a{
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 10px;
+}
+.redes i{
+    font-size: 1rem;
+    margin-top: 35px;
+}
 }
