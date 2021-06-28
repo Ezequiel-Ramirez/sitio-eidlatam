@@ -562,9 +562,9 @@
     <script src="js/funciones.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        slidesPerGroup: 2,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
@@ -575,6 +575,25 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+    },
+    // when window width is >= 480px
+    /* 480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }, */
+    // when window width is >= 640px
+    /* 640: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    } */
+  }
       });
     </script>
   </body>
