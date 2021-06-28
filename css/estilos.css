@@ -771,6 +771,8 @@ footer div:first-child a img{
     padding-left: 0;
 }
 footer div:first-child ul{
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding-left: 10px;
     margin-bottom: 30px;
@@ -778,6 +780,7 @@ footer div:first-child ul{
 footer div:first-child p{
     font-size: 13px;
     padding-left: 10px;
+    margin: 60px 0 0 0 ;
 }
 
 footer div:last-child p:first-of-type{
@@ -828,7 +831,7 @@ footer div:last-child p:last-of-type{
 }
 .redes i{
     font-size: 2rem;
-    margin-top: 35px;
+    
 }
 
 /* MEDIA QUERIES */
