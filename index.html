@@ -28,33 +28,74 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <header class="header" id="header">
-      <div class="menu-mobile">
-        <div class="logo">
-          <a href="index.html"><img src="img/logos/LOGO EID.png" alt=""></a>
-        </div>
-        <div class="mobile-icon">
-          <a href="#header" class="open"><i class="fas fa-bars fa-2x"></i></a>
-          <a href="#" class="close"><i class="fas fa-times fa-2x"></i></a>
-        </div>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li class="menu-item"><a class="menu-link" href="#">Cursos</a></li>
-          <li class="menu-item">
-            <a class="menu-link" href="#testimonial">Testimonios</a>
-          </li>
-          <li class="menu-item"><a class="menu-link" href="#">Nosotros</a></li>
-          <li class="menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
-      <div class="icon-usuario-carrito">
-        <a href="#"><i class="fas fa-user"></i></a>
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-      </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img alt="logo" src="img/logos/logoEid.png"></a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="logo-mobile">
+                <a href="index.html"><img alt="logo" src="img/logos/logoEidMobile.png"></a>
+            </div>
+            <ul>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Testimonios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="icon-usuario-carrito">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
     </header>
     <main>
-     
+        <!-- slider inicio -->
+        <div class="container-slider-inicio">
+            <div class="contenido-slider1-left">
+                <h1>ESCUELA DE INOVACIÓN DEPORTIVA</h1>
+                <h2>Profesionaliza tu pasión</h2>
+                <div class="btn-masinfo">
+                    <h3>Conocer más</h3>
+                </div>
+            </div>
+            <div class="contenido-slider1-right">
+                <div class="img-uno-inicio">
+                    <img src="img/logos/img1inicio.svg" alt="">
+                </div>
+            </div>
+        </div>
+             
+      <!-- Info minima -->
+        <div name="slide"class="info-minima-contenidos">
+                <img src="img/logos/instructor.png" alt="Profesionales">
+                <div class="info-minima-texto">
+                    <h4>Expertos de primer nivel</h4>
+                    <p>Docentes especialistas con casos de exito demostrados</p>
+                </div>
+
+                <img src="img/logos/saveClases.png" alt="Clases grabadas">
+                <div class="info-minima-texto">
+                    <h4>Clases Guardadas</h4>
+                    <p>Materiales de estudio disponibles las 24 horas</p>
+                </div>
+
+                <img src="img/logos/certificado.png" alt="Certificado">
+                <div class="info-minima-texto">
+                    <h4>Certificación</h4>
+                    <p>Certificado por 15 horas de capacitación</p>
+                </div>
+
+                <img src="img/logos/netw.png" alt="Networking">
+                <div class="info-minima-texto">
+                    <h4>Networking</h4>
+                    <p>Acceso a nuestra comunidad de profesionales de Latam</p>
+                </div>
+            </div>
+        </div>
     
     <!-- slider -->
     <section class="slider-cursos">
