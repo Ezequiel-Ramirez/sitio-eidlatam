@@ -663,16 +663,25 @@ footer div:first-child a img{
     margin-bottom: 20px;
     padding-left: 0;
 }
-footer div:first-child ul{
+.footer{
+    padding-left: 0;
+    margin-left: 0;
+}
+.footer ul{
+    flex-direction: column;
     list-style: none;
     padding-left: 10px;
+    
     margin-bottom: 30px;
 }
 footer div:first-child p{
     font-size: 13px;
     padding-left: 10px;
+   
 }
-
+#copy{
+    padding-top: 50px;
+}
 footer div:last-child p:first-of-type{
     float: left;
     font-size: 1.5rem;
