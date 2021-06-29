@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+/* Tipografia Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&display=swap');
+/* Tipografia Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -841,6 +844,20 @@ footer div:last-child p:last-of-type{
     margin-top: 35px;
 }
 
+/* Preguntas frecuentes */
+
+.titulo-preguntas-frecuentes{
+    font-size: 54px;
+    font-weight: bold;
+    padding: 40px 0 30px 95px;
+    color: #03091E;
+}
+.acordion-preguntas-frecuentes{
+    width: 90vw;
+    padding-left: 95px;
+    color: #03091E;
+}
+
 /* MEDIA QUERIES */
 /* HEADER */
 @media (max-width: 920px) {
@@ -965,6 +982,17 @@ nav ul li a:hover{
     justify-content: center;
     margin: auto;
     margin-bottom: 10px;
+    }
+
+ /* Preguntas frecuentes */
+.titulo-preguntas-frecuentes{
+    padding: 25px 0 15px 40px;
+    font-size: 60px;
+    font-weight: bold;
+    }
+.acordion-preguntas-frecuentes{
+    width: 95vw;
+    padding: 10px 10px 0 40px;
     }
 }
 
