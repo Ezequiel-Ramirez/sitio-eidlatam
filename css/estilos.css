@@ -858,6 +858,9 @@ footer div:last-child p:last-of-type{
     font-size: 2rem;
     margin-top: 35px;
 }
+.faq{
+    display: none;
+}
 
 /* Preguntas frecuentes */
 
@@ -1523,6 +1526,9 @@ footer div:last-child p:last-of-type{
 .cards img{
     width: 40px;
     height: 40px;  
+}
+.faq{
+    display: block;
 }
 .faq a{
     color: white;
