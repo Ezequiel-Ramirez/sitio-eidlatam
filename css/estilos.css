@@ -633,7 +633,10 @@ color: #FFFFFF;
 .divblog1 .img, .divblog2 .img, .divblog3 .img{
     width: 168px;
     height: 174px;
-    background-color: white;
+    background-image: url(../img/fondoblogposteo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: #707070;
     float: left;
     margin-right: 10px;
@@ -641,7 +644,10 @@ color: #FFFFFF;
 .divblog4 .img{
     width: 444px;
     height: 383px;
-    background-color: white;
+    background-image: url(../img/fondoblogposteo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: #707070;
     margin-bottom: 15px;
 }
@@ -654,6 +660,12 @@ color: #FFFFFF;
     margin: 0;
     font-size: 2.25rem;
     line-height: 36px;
+}
+.blog-container .blog-subtitulo-movil, .page-blog .blog-subtitulo-movil{
+display: none;
+}
+.blog-container .blog-titulo-movil, .page-blog .blog-titulo-movil{
+display: none;
 }
 /* BLOG PAGINA COMPLETA */
 .page-blog {
@@ -709,7 +721,7 @@ padding: 20px 0 0 130px;
 .div-page-blog_2{
     width: 75%;
     height: 380px;
-    background-color: #03091E;
+    background-color: #010513;
     border-radius: 4px;
     color: #FFFFFF;
     text-align: center;
@@ -730,6 +742,9 @@ padding: 20px 0 0 130px;
     margin: 50px 0 0 0;
 }
 /* NEWSLETTER */
+.sectionFormBlog{
+    display: none;
+}
 .newsletter{
     width: 100%;
     height: 297px;
@@ -1252,8 +1267,12 @@ footer div:last-child p:last-of-type{
 }
 
 @media (max-width: 480px){
+.slider-cursos{
+    width: 90%;
+    padding: 5px;
+}
 .slider-cursos h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .card{
     width: 450px;
@@ -1266,6 +1285,12 @@ footer div:last-child p:last-of-type{
 .card .content p:first-of-type{
     font-weight: bold;
     font-size: 1rem;
+}
+.swiper-button-next:after {
+    padding-left: 25px;
+}
+.swiper-button-prev:after{
+    padding-right: 27px;
 }
 /* detalle */
 .detail{
@@ -1294,13 +1319,19 @@ footer div:last-child p:last-of-type{
     font-size: 2rem;
 }
 .detail-container div:last-child button{
-    margin: 10px 0 0 240px;
+    margin: 5px 0 0 200px;
 }
 /* mensaje gris */
 #txt{
     width: 100%;
     font-size: 1.5rem;
     padding: 10px;
+}
+/* testimonial */
+.testimonials h2{
+    font-size: 1.5rem;
+    padding: 0;
+    text-align: center;
 }
 /* destinatarios */
 .destination{
@@ -1317,6 +1348,11 @@ footer div:last-child p:last-of-type{
     width: 150px;
     height: 40px;
     margin-top: 25px;
+}
+.destination button{
+    display: block;
+    margin: 0 auto;
+
 }
 /* autoridades */
 .autoridades, .organizan{
@@ -1347,7 +1383,7 @@ footer div:last-child p:last-of-type{
 }
 /* blog section*/
 .blog{
-    padding: 30px 50px;
+    padding: 30px 10px;
 }
 .blog-container {
     grid-template-columns: 1fr;
@@ -1359,11 +1395,49 @@ footer div:last-child p:last-of-type{
 .divblog3 { grid-area: 4 / 1 / 5 / 2; }
 .divblog4 { grid-area: 1 / 1 / 2 / 2; }
 .divblog1 .img, .divblog2 .img, .divblog3 .img, .divblog4 .img{
-    width: 50%;
-    height: 100px;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 15px;
+}
+.img{
+    position: relative;
+}
+.blog-container .blog-subtitulo, .page-blog .blog-subtitulo{
+    display: none;
 }
 .blog-container .blog-titulo, .page-blog .blog-titulo{
-    font-size: 1.5rem; 
+    display: none;
+}
+.blog-container .blog-subtitulo-movil, .page-blog .blog-subtitulo-movil{
+    display: block;
+    width: 100%;
+    color: #03091E;
+    font-size: 1rem;
+    letter-spacing: normal;
+    position: absolute;
+    bottom: 46px;
+    left: 0;
+    margin: 0;
+    padding: 5px;
+    background-color: #f2f2f580;
+}
+.blog-container .img .blog-titulo-movil, .page-blog .img .blog-titulo-movil{
+    display: block;
+    width: 100%;
+    color: #03091E;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 36px;
+    background-color: #f2f2f580;
+}
+.blog button{
+    background-color: transparent;
+    border: 1px solid white;
 }
 /* BLOG PAGINA COMPLETA */
 .page-blog {
@@ -1386,16 +1460,18 @@ footer div:last-child p:last-of-type{
 
 /* NEWSLETTER */
 .newsletter{
-    height: 100px;
+    height: 250px;
 }
-#input input, #button-addon2{
-    font-size: 1rem;
-}
-.newsletter #input {
-    width: auto;
-    margin-bottom: 0;
+.sectionFormBlog{
+    display: block;
 }
 
+.input-group{
+    display: none;
+}
+.newsletter h6{
+    display: none;
+}
 /* FOOTER */
 footer{
     max-width: 100vw;
@@ -1448,6 +1524,10 @@ footer div:last-child p:last-of-type{
     width: 40px;
     height: 40px;  
 }
+.faq a{
+    color: white;
+    margin-bottom: 0;
+}
 .redes{
     justify-content: center;
 }
@@ -1455,9 +1535,10 @@ footer div:last-child p:last-of-type{
     text-decoration: none;
     color: #EEEEEE;
     padding: 10px;
+   padding: 0 10px;
 }
 .redes i{
     font-size: 1rem;
-    margin-top: 35px;
+   
 }
 }
