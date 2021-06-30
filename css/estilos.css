@@ -698,14 +698,20 @@ padding: 20px 0 0 130px;
 .div-page-blog_1 .img{
     width: 100%;
     height: 383px;
-    border: #707070;
+    background-image: url(../img/fondoblogposteo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: grey;
     margin-bottom: 15px;
 }
 .div-page-blog_3 .img, .div-page-blog_4 .img, .div-page-blog_5 .img, .div-page-blog_6 .img, .div-page-blog_7 .img, .div-page-blog_8 .img{
     width: 100%;
     height: 222px;
-    background-color: grey;
+    background-image: url(../img/fondoblogposteo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: #707070;
 }
 .btnblogpage, .div-page-blog_2 input[type="submit"]{
@@ -1461,6 +1467,10 @@ footer div:last-child p:last-of-type{
     .div-page-blog_7 { grid-area: 6 / 1 / 7 / 2; }
     .div-page-blog_8 { grid-area: 7 / 1 / 8 / 2; }
 
+    .btnblogpage{
+        background: transparent;
+        color: #03091E;
+    }
 /* NEWSLETTER */
 .newsletter{
     height: 250px;
