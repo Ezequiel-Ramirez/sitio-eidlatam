@@ -1339,6 +1339,9 @@ footer div:last-child p:last-of-type{
     float: right;
     margin: 5px 0 0 ;
 }
+.swiper-pagination-bullets{
+    display: none;
+}
 /* mensaje gris */
 #txt{
     width: 100%;
