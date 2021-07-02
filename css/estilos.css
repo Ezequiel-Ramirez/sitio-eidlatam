@@ -1311,7 +1311,7 @@ footer div:last-child p:last-of-type{
 }
 /* detalle */
 .detail{
-    padding: 40px;
+    padding: 20px;
 }
 .detail-container{
     flex-direction: column-reverse;
@@ -1336,7 +1336,8 @@ footer div:last-child p:last-of-type{
     font-size: 2rem;
 }
 .detail-container div:last-child button{
-    margin: 5px 0 0 200px;
+    float: right;
+    margin: 5px 0 0 ;
 }
 /* mensaje gris */
 #txt{
