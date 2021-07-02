@@ -21,10 +21,10 @@
     <!-- css -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
     <link rel="stylesheet" href="css/swiper.css">
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    /> -->
+    />
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
@@ -54,17 +54,34 @@
     </header>
     <main>
         <!-- slider inicio -->
-        <div class="container-slider-inicio">
-            <div class="contenido-slider1-left">
-                <h1>ESCUELA DE INOVACIÓN DEPORTIVA</h1>
-                <h2>Profesionaliza tu pasión</h2>
-                <div class="btn-masinfo">
-                    <h3>Conocer más</h3>
+        <div class="swiper-container mySwiper container-slider-inicio">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide contenido-slider1">
+                    <img src="img/slider1-inicio.jpg">
+                    <div class="text-slider1-inicio">
+                        <h1>ESCUELA DE INOVACIÓN DEPORTIVA</h1>
+                        <h2>Profesionaliza tu pasión</h2>
+                        <div class="btn-masinfo-inicio">
+                            <button>Conocer más</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="contenido-slider1-right">
-                <div class="img-uno-inicio">
-                    <img src="img/logos/img1inicio.svg" alt="">
+                <div class="swiper-slide contenido-slider2">
+                    <img src="img/slider2-inicio.jpg">
+                    <div class="text-slider2-inicio">
+                        <h4>Los mejores ponentes</h4>
+                        <h2>redes sociales en el deporte</h2>
+                        <h3>Workshop de 5 clases</h3>
+                        <div class="btn-masinfo-inicio">
+                            <button>Inscribite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide contenido-slider3">
+                    <img src="img/slider1-inicio.jpg" >
+                </div>
+                </div class="btns-slider-inicio">
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -581,12 +598,19 @@
     <!-- script -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <!-- Initialize Swiper -->
     <script src="js/funciones.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+       let swiper = new swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        });
+      let swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
         slidesPerGroup: 1,
