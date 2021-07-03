@@ -660,6 +660,7 @@ color: #FFFFFF;
     border: #707070;
     float: left;
     margin-right: 10px;
+    transition: all 0.5s ease;
 }
 .divblog4 .img{
     width: 444px;
@@ -670,6 +671,10 @@ color: #FFFFFF;
     background-size: cover;
     border: #707070;
     margin-bottom: 15px;
+    transition: all 0.5s ease;
+}
+.divblog1 .img:hover, .divblog2 .img:hover, .divblog3 .img:hover, .divblog4 .img:hover{
+    filter: opacity(40%);
 }
 .blog-container .blog-subtitulo, .page-blog .blog-subtitulo{
     font-size: 1rem;
@@ -834,6 +839,9 @@ footer div:first-child p{
 #copy{
     padding-top: 0px;
 }
+#copyMovil{
+    display: none;
+}
 footer div:last-child p:first-of-type{
     float: left;
     font-size: 1.5rem;
@@ -973,7 +981,7 @@ nav ul li a:hover{
 /*Slider inicio*/
 .container-slider-inicio{
     height: 80%;
-    widht: 100%;
+    width: 100%;
 }
 .text-slider1-inicio{
     padding: 70px 0 0 15px;
@@ -1237,6 +1245,17 @@ footer div:first-child p{
 #txtPago{
     margin-left: 188px !important;
 }
+#txtBeca{
+    float: none;
+    margin-bottom: 5px;
+}
+.faq{
+    display: block;
+    text-align: right;
+}
+.faq a{ 
+color: white;
+}
 footer button{
     margin: 0 0px;
     margin-left: 190px;
@@ -1278,8 +1297,12 @@ footer div:last-child p:last-of-type{
     padding: 10px;
 }
 .redes i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
     font-size: 1rem;
-    margin-top: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 }
 
@@ -1485,10 +1508,11 @@ footer div:last-child p:last-of-type{
     }
 /* NEWSLETTER */
 .newsletter{
-    height: 250px;
+    height: 280px;
 }
 .sectionFormBlog{
     display: block;
+    height: 100%;
 }
 
 .input-group{
@@ -1513,9 +1537,6 @@ footer div{
 }
 
 footer div:first-child{
-    display: none;
-}
-#txtBeca{
     display: none;
 }
 
@@ -1551,6 +1572,7 @@ footer div:last-child p:last-of-type{
 }
 .faq{
     display: block;
+    text-align: center;
 }
 .faq a{
     color: white;
@@ -1567,6 +1589,12 @@ footer div:last-child p:last-of-type{
 }
 .redes i{
     font-size: 1rem;
-   
+    margin-top: 10px;
+}
+#copyMovil{
+    display: block;
+    font-size: 0.5rem;
+    font-weight: normal;
+    margin-top: 5px;
 }
 }
