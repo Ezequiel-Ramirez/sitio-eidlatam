@@ -1303,6 +1303,7 @@ footer div:first-child p{
     float: none;
     margin-bottom: 5px;
     display: block;
+    width: 100%;
 }
 .faq{
     display: block;
@@ -1627,6 +1628,7 @@ footer div:last-child p:last-of-type{
 }
 .faq{
     display: block;
+    width: 100%;
     text-align: center;
 }
 .faq a{
