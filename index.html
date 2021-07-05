@@ -20,10 +20,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- css -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
@@ -53,38 +49,53 @@
         </nav>
     </header>
     <main>
-        <!-- slider inicio -->
-        <div class="swiper-container mySwiper container-slider-inicio">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide contenido-slider1">
-                    <img src="img/slider1-inicio.jpg">
-                    <div class="text-slider1-inicio">
-                        <h1>ESCUELA DE INOVACIÓN DEPORTIVA</h1>
-                        <h2>Profesionaliza tu pasión</h2>
-                        <div class="btn-masinfo-inicio">
-                            <button>Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide contenido-slider2">
-                    <img src="img/slider2-inicio.jpg">
-                    <div class="text-slider2-inicio">
-                        <h4>Los mejores ponentes</h4>
-                        <h2>redes sociales en el deporte</h2>
-                        <h3>Workshop de 5 clases</h3>
-                        <div class="btn-masinfo-inicio">
-                            <button>Inscribite</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide contenido-slider3">
-                    <img src="img/slider1-inicio.jpg" >
+       
+      <!-- SLIDER INICIO START-->
+    <div class="container-slider-inicio">
+        <div class="container-slides-inicio">
+        <!--BOTONES PAGINACION START-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <!-- BOTONES PAGINACION END -->
+        <!--SLIDES INICIO START-->
+        <div class="slide-inicio first-inicio contenido-slider1">
+            <img src="img/slider1-inicio.jpg">
+            <div class="info-inicio text-slider1-inicio">
+                <h1>ESCUELA DE INOVACIÓN DEPORTIVA</h1>
+                <h2>Profesionaliza tu pasión</h2>
+                <div class="btn-masinfo-inicio">
+                    <button>Conocer más</button>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
-       </div>
+        </div>
+        <div class="slide-inicio contenido-slider2">
+            <img src="img/slider2-inicio.jpg">
+            <div class="info-inicio text-slider2-inicio">
+                <h4>Los mejores ponentes</h4>
+                <h2>redes sociales en el deporte</h2>
+                <h3>Workshop de 5 clases</h3>
+                <div class="btn-masinfo-inicio">
+                    <button class="btn-slide2-inicio">Inscribite</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide-inicio contenido-slider3">
+            <img src="img/slider1-inicio.jpg" >
+        </div>
+        <!--SLIDE INICIO END-->
+        </div>
+        <!--NAVEGACION MANUAL START-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+        <!--NAVEGACION MANUAL END-->
+    </div>
+    <!--SLIDER INICIO START-->
              
-      <!-- Info minima -->
+      <!-- Info minima start -->
         <div name="slide"class="info-minima-contenidos">
                 <img src="img/logos/instructor.png" alt="Profesionales">
                 <div class="info-minima-texto">
@@ -111,6 +122,7 @@
                 </div>
             </div>
         </div>
+    <!-- Info minima end -->
     
     <!-- slider -->
     <section class="slider-cursos" id="cursos">
@@ -605,13 +617,6 @@
     <!-- Initialize Swiper -->
     <script src="js/funciones.js"></script>
     <script>
-       var swiperInicio = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        },
-        });
        var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
