@@ -81,24 +81,24 @@ input[type="checkbox"]{
     display: none;
 }
 
-/* SLIDER INICIO */
+/* slider inicio */
 .container-slider-inicio{
     width: 100%;
-    height: 77vh;
+    height: 80vh;
     overflow: hidden;
 }
 .container-slides-inicio{
     width: 500%;
-    height: 77vh;
+    height: 80vh;
+    position: relative;
     display: flex;
-    overflow: hidden;
 }
 .container-slides-inicio input{
     display: none;
 }
 .slide-inicio{
     width: 20%;
-    transition: .5s;
+    transition: .6s;
 }
 .slide-inicio img{
     width: 100%;
@@ -107,12 +107,11 @@ input[type="checkbox"]{
 }
 /* Primer slide inicio*/
 .info-inicio{
-    position: fixed;
+    position: absolute;
     top: 0;
-    overflow: hidden;
 }
 .text-slider1-inicio{
-    margin: 95px 0 25px 95px;
+    margin: 30px 0 25px 95px;
     color: #EFF0F1;
 }
 .container-slider-inicio .text-slider1-inicio h1{
@@ -136,20 +135,23 @@ input[type="checkbox"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 175px;
-    height: 43px;
+    width: 210px;
+    height: 56px;
     background-color: #82D940;
-    border-radius: 37px ;
+    border-radius: 42px;
     margin-top: 120px;
-    font-size: 20px;
+    font-size: 23px;
     text-align: center;
     cursor: pointer;
 }
 /* Segundo slide inicio */
+.contenido-slider2{
+    position: relative;
+}
 .text-slider2-inicio{
     width: 100%;
     color: #EFF0F1;
-    padding-top: 120px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1065,30 +1067,26 @@ nav ul li a.active,
 nav ul li a:hover{
     background: none;
     color: greenyellow;
-    }
+}
     
-    /*Slider inicio*/
-    .container-slider-inicio{
-        height: 80vh;
-    }
-    /* slide1 */
-    .text-slider1-inicio{
-        margin: 105px 0 20px 45px;
-        }    
-    .container-slider-inicio .text-slider1-inicio h1{
-        font-size: 40px;
-        padding-top: 10px;
-        margin-bottom: 58px;
-    }
-    .container-slider-inicio .text-slider1-inicio h2{
-        font-size: 25px;
-    }
-    .container-slider-inicio .btn-masinfo-inicio button{
-        width: 182px;
-        height: 54px;
-        font-size: 22px;
-    }
-    
+/*Slider inicio*/
+/* slide1 */
+.text-slider1-inicio{
+    margin: 65px 0 20px 55px;
+    }    
+.container-slider-inicio .text-slider1-inicio h1{
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 58px;
+}
+.container-slider-inicio .text-slider1-inicio h2{
+    font-size: 25px;
+}
+.container-slider-inicio .btn-masinfo-inicio button{
+    width: 182px;
+    height: 54px;
+    font-size: 22px;
+}
 /* Info minima */
 .info-minima-contenidos{
     display: flex;
@@ -1098,7 +1096,7 @@ nav ul li a:hover{
     font-size: 16px;
 }
 .info-minima-contenidos, .info-minima-texto{
-    flex: 0 0 70%;
+    flex: 0 0 40%;
     width: 100%;
     object-fit: cover;
     overflow: auto;
@@ -1389,38 +1387,38 @@ footer div:last-child p:last-of-type{
 }
 
 @media (max-width: 480px){
-    /*Slider inicio*/
-    .container-slider-inicio{
-        height: 80vh;
-    }
-    .text-slider1-inicio{
-        margin: 85px 0 20px 20px;
-    }    
-    .container-slider-inicio .text-slider1-inicio h1{
-        font-size: 33px;
-        margin-bottom: 50px;
-    }
-    .container-slider-inicio .text-slider1-inicio h2{
-        font-size: 24px;
-    }
-    .container-slider-inicio .btn-masinfo-inicio button{
-        width: 152px;
-        height: 47px;
-        font-size: 20px;
-    }
-    /* slide 2 inicio*/
-    .text-slider2-inicio{
-        text-align: center;
-        padding-top: 110px;
-    }
-    .text-slider2-inicio h2{
-        font-size: 37px;
-        padding: 20px 0;
-    }
-    .container-slider-inicio .text-slider1-inicio .btn-masinfo-inicio .btn-slide2-inicio button{
-        bottom: 0;
-        margin-top: -20px;  
-    }
+/*Slider inicio*/
+.text-slider1-inicio{
+    margin: 45px 0 20px 20px;
+}    
+.container-slider-inicio .text-slider1-inicio h1{
+    font-size: 33px;
+    margin-bottom: 50px;
+}
+.container-slider-inicio .text-slider1-inicio h2{
+    font-size: 24px;
+}
+.container-slider-inicio .btn-masinfo-inicio button{
+    width: 152px;
+    height: 47px;
+    font-size: 20px;
+}
+/* slide 2 inicio*/
+.text-slider2-inicio{
+    text-align: center;
+    padding-top: 80px;
+}
+.text-slider2-inicio h2{
+    font-size: 37px;
+    padding: 20px 0;
+}
+/* info minima */
+.info-minima-contenidos, .info-minima-texto{
+    flex: 0 0 70%;
+    width: 100%;
+    object-fit: cover;
+    overflow: auto;
+}
     
 /* Slider cursos */
 .slider-cursos{
@@ -1720,16 +1718,23 @@ footer div:last-child p:last-of-type{
     margin-top: 5px;
 }
 }
-@media (min-height: 720px){
+@media (min-height: 726px){
     .container-slider-inicio .btn-masinfo-inicio button{
-        width: 182px;
-        height: 53px;
+        width: 192px;
+        height: 56px;
         font-size: 22px;
     }
+    .container-slider-inicio .text-slider1-inicio h1{
+        font-size: 42px;
+        padding-bottom: 60px;
+    }
+    .container-slider-inicio .text-slider1-inicio h2{
+        font-size: 26px;
+    }
     .text-slider1-inicio{
-        margin: 110px 0 30px 30px;
+        margin: 55px 0 30px 30px;
     }
     .container-slider-inicio .btn-masinfo-inicio button{
-        margin-top: 220px;
+        margin-top: 200px;
     }
 }
