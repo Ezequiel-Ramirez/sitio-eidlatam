@@ -33,7 +33,7 @@ $(".btnCurso").click(function (e) {
 //LOGIN Y REGISTRO
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);
-window.addEventListener("resize", anchoPagina);
+//window.addEventListener("resize", anchoPagina);
 
 var contenedor_login_register = document.querySelector(".contenedor__login-register");
 var formulario_login = document.querySelector(".formulario__login");
@@ -54,7 +54,7 @@ function anchoPagina(){
         contenedor_login_register.style.left = "0px";
     }
 }
-//anchoPagina();
+anchoPagina();
 
 function iniciarSesion(){
     if(window.innerWidth > 920){

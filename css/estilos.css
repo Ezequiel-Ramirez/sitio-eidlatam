@@ -1003,10 +1003,10 @@ footer div:last-child p:last-of-type{
 /* LOGIN Y REGISTRO */
 #bodyLogin{
     width: 100%;
-    /* background-image: url(../img/slider2-inicio.jpg);
+    background-image: url(../img/slider2-inicio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; */
+    background-position: center;
     /* background-attachment: fixed; */
 }
 .section-login{
