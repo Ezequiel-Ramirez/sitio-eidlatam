@@ -42,7 +42,7 @@ var caja_trasera_login = document.querySelector(".caja__trasera-login");
 var caja_trasera_register = document.querySelector(".caja__trasera-register");
 
 function anchoPagina(){
-    if(window.innerWidth>920){
+    if(window.innerWidth > 920){
         caja_trasera_login.style.display = "block";
         caja_trasera_register.style.display = "block";
     }else{
@@ -54,7 +54,7 @@ function anchoPagina(){
         contenedor_login_register.style.left = "0px";
     }
 }
-anchoPagina();
+//anchoPagina();
 
 function iniciarSesion(){
     if(window.innerWidth > 920){
