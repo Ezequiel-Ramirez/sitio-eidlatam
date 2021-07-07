@@ -1007,7 +1007,7 @@ footer div:last-child p:last-of-type{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 .section-login{
     width: 100%;
