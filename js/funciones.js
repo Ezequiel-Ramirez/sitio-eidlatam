@@ -54,7 +54,7 @@ function anchoPagina(){
         contenedor_login_register.style.left = "0px";
     }
 }
-anchoPagina();
+//anchoPagina();
 
 function iniciarSesion(){
     if(window.innerWidth > 920){
