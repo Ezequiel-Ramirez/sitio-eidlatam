@@ -1513,7 +1513,7 @@ footer div:last-child p:last-of-type{
     margin: auto;
 }
 .caja__trasera-login{
-    display: none;
+    opacity: 0;
 }
 .caja__trasera div{
     margin: 0px;
