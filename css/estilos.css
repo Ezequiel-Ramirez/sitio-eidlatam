@@ -1117,8 +1117,8 @@ footer div:last-child p:last-of-type{
 @media (max-width: 920px) {
 /* LOGIN Y REGISTRO */
 .section-login{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .caja__trasera{
     max-width: 350px;
