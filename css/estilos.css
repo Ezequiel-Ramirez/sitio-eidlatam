@@ -1497,6 +1497,12 @@ footer div:last-child p:last-of-type{
     margin-top: 0;
     margin-bottom: 20px;
 }
+/* login */
+.contenedor__login-register{
+    max-width: 330px;
+    
+}
+
 }
 
 @media (max-width: 480px){
@@ -1520,8 +1526,8 @@ footer div:last-child p:last-of-type{
     position: absolute;
 }
 .contenedor__login-register{
-    top: -10px;
-    left: -5px;
+    top: -40px;
+    left: 0px;
     margin: auto;
 }
 .contenedor__login-register form{
