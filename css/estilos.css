@@ -707,7 +707,9 @@ color: #FFFFFF;
     display: block;
     text-align: center;
     margin:  5px auto;
-
+}
+.blog a{
+    text-decoration: none;
 }
 .blog-container {
     display: grid;
@@ -1112,6 +1114,80 @@ footer div:last-child p:last-of-type{
     display: none;
 }
 
+/* contacto */
+.section__contacto{
+    width: 100%;
+    height: 100vh;
+    padding: 64px 139px;
+    background-image: url(../img/slider1-inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEEEEE;
+}
+.section__contacto div:first-child{
+    width: 100%;
+    padding-right: 130px;
+
+}
+.section__contacto div:first-child h1{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.section__contacto div:first-child p{
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+}
+.section__contacto div:last-child{
+    width: 100%;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #03091E;
+}
+.section__contacto div:last-child h6{
+    font-size: 1.313rem;
+    margin-bottom: 15px;
+}
+.section__contacto div:last-child p{
+    font-size: 1.063rem;
+    letter-spacing: 0.7px;
+    line-height: normal;
+}
+.section__contacto div:last-child form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section__contacto div:last-child form input{
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: transparent;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+}
+.section__contacto div:last-child form button{
+    width: 168px;
+    height: 48px;
+    background-color: #82D940;
+    border-color: #707070;
+    border-radius: 37px;
+    color: #EFF0F1;
+    margin: 25px 0 20px 0;
+    transition: all 0.3s ease;
+}
+.section__contacto div:last-child form button:hover{
+    background-color: #5a972c;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 920px) {
@@ -1499,10 +1575,20 @@ footer div:last-child p:last-of-type{
 }
 /* login */
 .contenedor__login-register{
-    max-width: 330px;
-    
+    max-width: 330px;   
 }
+/* contacto */
+.section__contacto{
+    padding: 25px ;
+}
+.section__contacto div:first-child{
+    padding-right: 80px;
 
+}
+.section__contacto div:first-child h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
 }
 
 @media (max-width: 480px){
@@ -1865,6 +1951,51 @@ footer div:last-child p:last-of-type{
     text-align: center;
     margin-top: 5px;
 }
+/* contacto */
+.section__contacto{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+}
+.section__contacto div:first-child{
+   padding: 30px;
+   padding-bottom: 0;
+   text-align: center;
+
+}
+.section__contacto div:first-child h1{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+.section__contacto div:first-child p{
+    font-size: 1rem;
+}
+/* .section__contacto div:last-child{
+    width: 100%;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #03091E;
+} */
+.section__contacto div:last-child h6{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.section__contacto div:last-child p{
+    font-size: 0.8rem;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.section__contacto div:last-child form input{
+    height: 35px;
+    margin-bottom: 10px;
+}
+.section__contacto div:last-child form button{
+    width: 140px;
+    height: 40px;
+}
+
 }
 @media (min-height: 726px){
     .container-slider-inicio .btn-masinfo-inicio button{
