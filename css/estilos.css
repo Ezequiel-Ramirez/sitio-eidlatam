@@ -1168,29 +1168,29 @@ footer div:last-child p:last-of-type{
     font-weight: 200;
     font-style: italic;
 }
-.section__contacto div:last-child{
+.section__contacto div:last-child, .section__inscripcion div:last-child{
     width: 100%;
     padding: 25px 20px;
     text-align: center;
     background-color: #03091E;
 }
-.section__contacto div:last-child h6{
+.section__contacto div:last-child h6, .section__inscripcion div:last-child h6{
     font-size: 1.313rem;
     margin-bottom: 15px;
 }
-.section__contacto div:last-child p{
+.section__contacto div:last-child p, .section__inscripcion div:last-child p{
     font-size: 1.063rem;
     letter-spacing: 0.7px;
     line-height: normal;
 }
-.section__contacto div:last-child form{
+.section__contacto div:last-child form, .section__inscripcion div:last-child form{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.section__contacto div:last-child form input{
+.section__contacto div:last-child form input, .section__inscripcion div:last-child form input{
     width: 100%;
     height: 45px;
     color: white;
@@ -1200,7 +1200,7 @@ footer div:last-child p:last-of-type{
     border: 1px solid #EEEEEE;
     padding: 5px;
 }
-.section__contacto div:last-child form button{
+.section__contacto div:last-child form button, .section__inscripcion div:last-child form button{
     width: 168px;
     height: 48px;
     background-color: #82D940;
@@ -1210,8 +1210,63 @@ footer div:last-child p:last-of-type{
     margin: 25px 0 20px 0;
     transition: all 0.3s ease;
 }
-.section__contacto div:last-child form button:hover{
+.section__contacto div:last-child form button:hover, .section__inscripcion div:last-child form button:hover{
     background-color: #5a972c;
+}
+/* seccion inscripcion */
+.section__inscripcion{
+    width: 100%;
+    height: 100vh;
+    padding: 64px 139px;
+    background-image: url(../img/SliderCursos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEEEEE;
+    position: relative;
+}
+.section__inscripcion::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(40%);
+-webkit-filter: brightness(40%);
+    background-color: rgba(255, 0, 0, 0.7);
+}
+.section__inscripcion div:first-child{
+    width: 100%;
+    padding: 0px 10px;
+    z-index: 2;
+}
+.section__inscripcion div:last-child{
+    z-index: 2;
+}
+.section__inscripcion div:first-child h1{
+    font-size: 2.4rem;   
+}
+.section__inscripcion div:first-child h3{
+    font-size: 4.5rem;
+    font-weight: bold;   
+    float: left;
+}
+.section__inscripcion div:first-child #txtTituloCurso{
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+.section__inscripcion div:first-child #txtNumClases{
+    font-size: 1.063rem;
+}
+.section__inscripcion div:first-child p:last-of-type{
+    clear: both;
+}
+.section__inscripcion div:last-child form button{
+    margin-top: 0;
 }
 /* Politica de privacidad */
 .container-politica{
@@ -1632,7 +1687,7 @@ footer div:last-child p:last-of-type{
     max-width: 330px;   
 }
 /* contacto */
-.section__contacto{
+.section__contacto, .section__inscripcion{
     padding: 25px ;
 }
 .section__contacto div:first-child{
@@ -1643,6 +1698,14 @@ footer div:last-child p:last-of-type{
     font-size: 2rem;
     letter-spacing: 2px;
 }
+/* seccion inscripcion */
+.section__inscripcion div:first-child h1{
+    font-size: 2rem;   
+}
+.section__inscripcion div:first-child h3{
+    font-size: 4rem;
+}
+
 }
 
 @media (max-width: 480px){
@@ -2009,7 +2072,7 @@ footer div:last-child p:last-of-type{
     margin-top: 5px;
 }
 /* contacto */
-.section__contacto{
+.section__contacto, .section__inscripcion{
     height: 100%;
     flex-direction: column;
     justify-content: center;
@@ -2031,12 +2094,7 @@ footer div:last-child p:last-of-type{
     font-size: 1rem;
     font-weight: 500;
 }
-/* .section__contacto div:last-child{
-    width: 100%;
-    padding: 25px 20px;
-    text-align: center;
-    background-color: #03091E;
-} */
+
 .section__contacto div:last-child h6{
     font-size: 1.1rem;
     margin-bottom: 15px;
@@ -2053,6 +2111,10 @@ footer div:last-child p:last-of-type{
 .section__contacto div:last-child form button{
     width: 140px;
     height: 40px;
+}
+/* section inscripcion */
+.section__inscripcion div:first-child{
+    padding: 30px;
 }
 
 }
