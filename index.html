@@ -50,50 +50,56 @@
     </header>
     <main>
        
-      <!-- SLIDER INICIO START-->
-    <div class="container-slider-inicio">
-        <div class="container-slides-inicio">
-        <!--BOTONES PAGINACION START-->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <!-- BOTONES PAGINACION END -->
-        <!--SLIDES INICIO START-->
-        <div class="slide-inicio first-inicio contenido-slider1">
-            <img src="img/slider1-inicio.jpg">
-            <div class="info-inicio text-slider1-inicio">
-                <h1>ESCUELA DE INOVACIÓN DEPORTIVA</h1>
-                <h2>Profesionaliza tu pasión</h2>
-                <div class="btn-masinfo-inicio">
-                    <button>Conocer más</button>
+        <!-- SLIDER INICIO START-->
+        <div class="container-slider-inicio">
+            <div class="container-slides-inicio">
+            <!--BOTONES PAGINACION START-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!-- BOTONES PAGINACION END -->
+            <!--SLIDES INICIO START-->
+            <div class="slide-inicio first-inicio contenido-slider1">
+                <img loading="lazy" src="img/slider1-inicio.jpg">
+                <div class="info-inicio text-slider1-inicio">
+                    <h1>ESCUELA DE INOVACIÓN DEPORTIVA</h1>
+                    <h2>Profesionaliza tu pasión</h2>
+                    <div class="btn-masinfo-inicio">
+                        <button class="btn-slide1-inicio">Conocer más</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="slide-inicio contenido-slider2">
-            <img src="img/slider2-inicio.jpg">
-            <div class="info-inicio text-slider2-inicio">
-                <h4>Los mejores ponentes</h4>
-                <h2>redes sociales en el deporte</h2>
-                <h3>Workshop de 5 clases</h3>
-                <div class="btn-masinfo-inicio">
-                    <button class="btn-slide2-inicio">Inscribite</button>
+            <div class="slide-inicio contenido-slider2">
+                <img loading="lazy" src="img/slider2-inicio.jpg">
+                <div class="info-inicio text-slider2-inicio">
+                    <h4>Los mejores ponentes</h4>
+                    <h2>redes sociales en el deporte</h2>
+                    <h3>Workshop de 5 clases</h3>
+                    <div class="btn-masinfo-inicio">
+                        <button class="btn-slide2-inicio">Inscribite</button>
+                    </div>
                 </div>
             </div>
+            <div class="slide-inicio contenido-slider3">
+                <img loading="lazy" src="img/slider1-inicio.jpg" >
+            </div>
+            <!--SLIDE INICIO END-->
+            </div>
+            <!-- NAVEGACION AUTOMATICA START -->
+            <div class="navigation-auto">
+                <div class="auto-btn1-incio"></div>
+                <div class="auto-btn2-incio"></div>
+                <div class="auto-btn3-incio"></div>
+            </div>
+            <!--NAVEGACION MANUAL START-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--NAVEGACION MANUAL END-->
         </div>
-        <div class="slide-inicio contenido-slider3">
-            <img src="img/slider1-inicio.jpg" >
-        </div>
-        <!--SLIDE INICIO END-->
-        </div>
-        <!--NAVEGACION MANUAL START-->
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-        </div>
-        <!--NAVEGACION MANUAL END-->
-    </div>
-    <!--SLIDER INICIO START-->
+        <!--SLIDER INICIO END-->
              
       <!-- Info minima start -->
         <div name="slide"class="info-minima-contenidos">
@@ -617,6 +623,17 @@
     <!-- Initialize Swiper -->
     <script src="js/funciones.js"></script>
     <script>
+    // js para hacer el slider del inicio automatico start
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+            counter = 1;
+        }
+    }, 5500);
+    // js para hacer el slider del inicio automatico end  
+      
        var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
