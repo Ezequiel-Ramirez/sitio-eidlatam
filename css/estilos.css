@@ -1953,10 +1953,11 @@ footer div:last-child p:last-of-type{
 }
 /* contacto */
 .section__contacto{
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px 0px;
+    padding: 0px 0px;
 }
 .section__contacto div:first-child{
    padding: 30px;
