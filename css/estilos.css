@@ -17,7 +17,7 @@ body{
 header{
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 50;
 }
 header nav{
     display: flex;
@@ -65,6 +65,7 @@ header nav ul li a.active,
 header nav ul li a:hover{
     color: #03091E;
     background: #EFF0F1;
+    text-decoration: none;
 }
 nav .menu-btn i{
     color: #EFF0F1;
@@ -175,7 +176,33 @@ input[type="checkbox"]{
     font-weight: 300;
     font-style: italic;
 }
-/*btns paginacion slider*/
+/*btns paginacion slider auto*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -40px;
+}
+.navigation-auto div{
+    border: 2px solid #82D940;
+    padding: 6px;
+    border-radius: 10px;
+    transition: .6s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto {
+    background: #82D940;
+}
+#radio2:checked ~ .navigation-auto {
+    background: #82D940;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3-inicio{
+    background: #82D940;
+}
+/*btns paginacion slider manual*/
 .navigation-manual{
     position: absolute;
     width: 100%;
@@ -184,11 +211,11 @@ input[type="checkbox"]{
     justify-content: center;
 }
 .manual-btn{
-    border: 2px solid #EFF0F1;
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
+    border: 2px solid #82D940;
 }
 .manual-btn:not(:last-child){
     margin-right: 40px;
@@ -205,9 +232,7 @@ input[type="checkbox"]{
 #radio3:checked ~ .first-inicio{
     margin-left: -40%;
 }
-#radio4:checked ~ .first-inicio{
-    margin-left: -60%;
-}
+
 
 /* Info minima contenidos */
 .info-minima-contenidos{
@@ -219,19 +244,20 @@ input[type="checkbox"]{
     overflow: hidden;
 }
 .info-minima-contenidos img{
-    width: 78px;
-    height: 77px;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 12px;
 }
 .info-minima-texto{
     padding: 0 10px;
 }
 .info-minima-texto h4{
     font-size: 12px;
+    font-weight: 600;
     text-transform: uppercase;
 }
 .info-minima-texto p{
     font-size: 12px;
-    padding-top: 5px;
 }
 
 #txt{
@@ -1227,7 +1253,7 @@ nav ul{
     z-index: 100;
     top: 65px;
     left: -100%;
-    justify-content: center;
+    align-content: space-around;
     background: #03091E;
     height: 330px;
     width: 100%;
@@ -1252,11 +1278,12 @@ nav ul li a{
 #click:checked ~ ul li a{
     margin-left: 0px;
 }
-nav ul li a.active,
-nav ul li a:hover{
-    background: none;
-    color: greenyellow;
-}
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: greenyellow;
+        text-decoration: none;
+    }
     
 /*Slider inicio*/
 /* slide1 */
@@ -1275,6 +1302,9 @@ nav ul li a:hover{
     width: 182px;
     height: 54px;
     font-size: 22px;
+}
+.manual-btn:hover{
+    background: none;
 }
 /* Info minima */
 .info-minima-contenidos{
@@ -1646,6 +1676,9 @@ footer div:last-child p:last-of-type{
     font-size: 37px;
     padding: 20px 0;
 }
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide2-inicio{
+        margin-top: 100px;
+    }
 /* info minima */
 .info-minima-contenidos, .info-minima-texto{
     flex: 0 0 70%;
@@ -2015,7 +2048,10 @@ footer div:last-child p:last-of-type{
     .text-slider1-inicio{
         margin: 55px 0 30px 30px;
     }
-    .container-slider-inicio .btn-masinfo-inicio button{
-        margin-top: 200px;
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide1-inicio{
+        margin-top: 210px;
+    }
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide2-inicio{
+        margin-top: 190px;
     }
 }
