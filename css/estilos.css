@@ -1972,6 +1972,7 @@ footer div:last-child p:last-of-type{
 }
 .section__contacto div:first-child p{
     font-size: 1rem;
+    font-weight: 500;
 }
 /* .section__contacto div:last-child{
     width: 100%;
