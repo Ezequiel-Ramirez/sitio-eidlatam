@@ -553,7 +553,7 @@ color: #FFFFFF;
     height: 350px;
     margin-bottom: 5px;
 }
-.detail-container div:first-child a{
+.detail-container div:first-child button{
     width: 129px;
     display: block;
     padding: 5px;
@@ -561,6 +561,7 @@ color: #FFFFFF;
     color: #FFFFFF;
     font-size: 1.125rem;
     border: 3px solid #FFFFFF;
+    background: transparent;
     margin-top: 95px;
     transition: all 0.3s ease;
 }
@@ -1218,17 +1219,19 @@ footer div:last-child p:last-of-type{
     width: 100%;
     height: 100vh;
     padding: 64px 139px;
-    background-image: url(../img/SliderCursos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #EEEEEE;
     position: relative;
 }
-.section__inscripcion::before{
+.estilo1{
+    background-image: url(../img/SliderCursos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.estilo1::before{
     content: "";
     width: 100%;
     height: 100%;
@@ -1239,6 +1242,92 @@ footer div:last-child p:last-of-type{
 -webkit-filter: brightness(40%);
     background-color: rgba(255, 0, 0, 0.7);
 }
+.estilo2{
+    background-image: url(../img/SliderCursos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.estilo2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(40%);
+-webkit-filter: brightness(40%);
+    background-color: rgba(251, 255, 0, 0.7);
+}
+.estilo3{
+    background-image: url(../img/SliderCursos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.estilo3::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(40%);
+-webkit-filter: brightness(40%);
+    background-color: rgba(255, 208, 0, 0.705);
+}
+.estilo4{
+    background-image: url(../img/SliderCursos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.estilo4::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(40%);
+-webkit-filter: brightness(40%);
+    background-color: #62a52fa6;
+}
+.estilo5{
+    background-image: url(../img/SliderCursos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.estilo5::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(40%);
+-webkit-filter: brightness(40%);
+    background-color: #7f4cc2ad;
+}
+.estilo6{
+    background-image: url(../img/SliderCursos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.estilo6::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(40%);
+-webkit-filter: brightness(40%);
+    background-color: #0a8fcdaf;
+}
+
 .section__inscripcion div:first-child{
     width: 100%;
     padding: 0px 10px;
@@ -1254,13 +1343,16 @@ footer div:last-child p:last-of-type{
     font-size: 4.5rem;
     font-weight: bold;   
     float: left;
+    margin-right: 10px;
 }
 .section__inscripcion div:first-child #txtTituloCurso{
     font-size: 1.25rem;
     margin-top: 20px;
+    margin-bottom: 0;
 }
 .section__inscripcion div:first-child #txtNumClases{
     font-size: 1.063rem;
+    margin: 0;
 }
 .section__inscripcion div:first-child p:last-of-type{
     clear: both;
