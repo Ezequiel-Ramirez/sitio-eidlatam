@@ -565,10 +565,8 @@ color: #FFFFFF;
     margin-top: 95px;
     transition: all 0.3s ease;
 }
-.btnCompra{
-    margin-top: 10px;
-}
-.detail-container div:first-child a:hover{
+
+.detail-container div:first-child .btnCompra:hover{
     color: #03091E;
     font-weight: bold;
     text-decoration: none;
@@ -1909,7 +1907,7 @@ footer div:last-child p:last-of-type{
 .detail-container p{
     margin-bottom: 0;
 }
-.detail-container div:first-child a{
+.detail-container div:first-child .btnCompra{
     font-size: 1rem;
     margin-top: 10px;
 }
