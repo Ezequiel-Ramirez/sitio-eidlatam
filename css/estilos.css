@@ -565,6 +565,9 @@ color: #FFFFFF;
     margin-top: 95px;
     transition: all 0.3s ease;
 }
+.btnCompra{
+    margin-top: 10px;
+}
 .detail-container div:first-child a:hover{
     color: #03091E;
     font-weight: bold;
