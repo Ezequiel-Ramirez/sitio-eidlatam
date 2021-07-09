@@ -11,8 +11,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>EID Latam | Inscripción</title>
-    
+    <title>EID Latam</title>
+    <style>
+        @media (max-width: 480px) {
+            main h1{
+                font-size: 40px!important;
+            }
+            main p{
+                font-size: 24px!important;
+                padding: 0!important;
+            }
+            main button{
+                font-size: 1rem!important;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -40,27 +53,11 @@
         </nav>
     </header>
     
-    <main>
-        <section class="section__inscripcion ">
-            <div>
-                <h1>Estas a punto de inscribirte a:</h1>
-                <h3 id="modulo">01</h3>
-                <p id="txtTituloCurso">Redes sociales en el deporte</p>  <p id="txtNumClases">5 Clases</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi in odit similique laborum est dolore tenetur placeat beatae a dolores quidem, fuga voluptas eum omnis nemo enim adipisci sequi? Tempora. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt voluptatem blanditiis soluta reprehenderit a, mollitia placeat non, odio perferendis molestias ea ipsam voluptatibus praesentium libero possimus quod quia, optio autem?</p>
-            </div>
-            <div>
-                <h6>Te invitamos a dejar tus datos de contacto</h6>
-                <p>Vamos a enviarte información a la brevedad sobre nuestros cursos y productos disponibles.</p>
-                <form action="correo-contacto.php" method="POST">
-                    <input type="text" name="nombre" placeholder="Nombre y Apellido">
-                    <input type="tel" name="telefono" placeholder="Teléfono">
-                    <input type="email" name="email" placeholder="Correo electrónico">
-                    <p id="precio">USD $50</p>
-                    <button type="submit">Inscribirse</button>
-                </form>
-            </div>
-
-        </section>
+    <main style="width: 100%;height: 80vh; background-image: url(img/comunidad\ estadio2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+      <h1 style="width: 80%; padding: 30px 5px; text-align: center; display: block; margin: 0 auto; background: transparent; color: white; font-weight: bold; font-size: 4vw;">Gracias por contactarnos
+      </h1>
+      <p style="width: 80%; padding: 30px 5px; text-align: center; display: block; margin: 0 auto; background: transparent; color: white; font-weight: normal; font-size: 3vw;">Vamos a enviarte información a la brevedad sobre nuestros cursos y productos disponibles.</p>
+    <a href="index.html" style="text-decoration: none;"><button style="background-color: chartreuse; border: 1px solid black; color: white; font-size: 1.5rem; font-weight: bold; border-radius: 50px 60px; padding: 10px;display: block; margin: 0 auto;">Volver a Inicio</button></a>
     </main>
 
     <footer>
@@ -109,12 +106,6 @@
         </div>
     </footer>
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-    <!-- js -->
-    <script src="js/funciones.js"></script>
-    
 </body>
 </html>
