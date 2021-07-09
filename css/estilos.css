@@ -1264,6 +1264,7 @@ footer div:last-child p:last-of-type{
 }
 .section__inscripcion div:first-child p:last-of-type{
     clear: both;
+    text-align: justify;
 }
 .section__inscripcion div:last-child form button{
     margin-top: 0;
