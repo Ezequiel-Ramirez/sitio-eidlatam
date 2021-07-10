@@ -1036,7 +1036,6 @@ footer div:last-child p:last-of-type{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-attachment: fixed; */
 }
 .section-login{
     width: 100%;
@@ -1058,7 +1057,7 @@ footer div:last-child p:last-of-type{
     display: flex;
     justify-content: center;
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 128, 255, 0.5);
+    background-color: rgba(6, 53, 100, 0.5);
 }
 
 .caja__trasera div{
@@ -1076,19 +1075,19 @@ footer div:last-child p:last-of-type{
 }
 .caja__trasera button{
     padding: 10px 40px;
-    border: 2px solid white;
+    border: 2px solid #82D940;
     background: transparent;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    color: white;
+    color: #82D940;
     outline: none;
     transition: all 300ms;
 }
 
 .caja__trasera button:hover{
     background: white;
-    color: #46A2fd;
+    color: #82D940;
 }
 /* formularios de login */
 .contenedor__login-register{
@@ -1112,7 +1111,7 @@ footer div:last-child p:last-of-type{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: #46A2fd;
+    color: #03091E;
 }
 .contenedor__login-register form input{
     width: 100%;
@@ -1128,7 +1127,7 @@ footer div:last-child p:last-of-type{
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: #46A2fd;
+    background: #82D940;
     color: white;
     cursor: pointer;
     outline: none;
@@ -2020,12 +2019,10 @@ footer div:last-child p:last-of-type{
     color: #03091E;
     font-size: 1rem;
     letter-spacing: normal;
-    position: absolute;
-    bottom: 46px;
-    left: 0;
+    line-height: normal;
     margin: 0;
-    padding: 5px;
-    background-color: #f2f2f580;
+    padding: 0 5px;
+    
 }
 .blog-container .img .blog-titulo-movil, .page-blog .img .blog-titulo-movil{
     display: block;
