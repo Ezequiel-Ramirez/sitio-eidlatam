@@ -37,76 +37,22 @@ for (const boton of botones) {
     boton.onclick = manejadorCompra;
 }
 //EVENTO AL HACER CLICK A COMPRAR
+
+const txtInscripcion = [["Redes sociales en el deporte", "5 Clases", "USD 50" ], ["Marketing Deportivo", "5 Clases", "USD $50"], ["E-Sports", "5 Clases", "USD $50"], ["Nombre Curso 4", "5 Clases", "USD $50"], ["Nombre Curso 5", "5 Clases", "USD $50"], ["Nombre Curso 6", "5 Clases", "USD $50"]
+                    ]
+
 function manejadorCompra(evento) {
     //determino el id del seleccionado
-    let seleccionado = evento.target.id;
-    console.log(seleccionado)
-    if (seleccionado == 1) {
-        $.ajax('inscripcion.html')
-            .done(function (response) {
-                $(".sectionCompra").html(response);
-                $("#modulo").text("01")
-                $("#txtTituloCurso").text("Redes sociales en el deporte")
-                $("#txtNumClases").text("5 Clases")
-                $("#precio").text("USD $50")
-                $(".section__inscripcion").addClass("estilo1");
+    let id = evento.target.id;
+    console.log(id);
 
-            });
-    } else if (seleccionado == 2) {
-        $.ajax('inscripcion.html')
-            .done(function (response) {
-                $(".sectionCompra").html(response);
-                $("#modulo").text("02")
-                $("#txtTituloCurso").text("Marketing Deportivo")
-                $("#txtNumClases").text("5 Clases")
-                $("#precio").text("USD $50")
-                $(".section__inscripcion").addClass("estilo2");
-
-            });
-    } else if (seleccionado == 3) {
-        $.ajax('inscripcion.html')
-            .done(function (response) {
-                $(".sectionCompra").html(response);
-                $("#modulo").text("03")
-                $("#txtTituloCurso").text("Marketing Deportivo")
-                $("#txtNumClases").text("5 Clases")
-                $("#precio").text("USD $50")
-                $(".section__inscripcion").addClass("estilo3");
-
-            });
-    } else if (seleccionado == 4) {
-        $.ajax('inscripcion.html')
-            .done(function (response) {
-                $(".sectionCompra").html(response);
-                $("#modulo").text("04")
-                $("#txtTituloCurso").text("Marketing Deportivo")
-                $("#txtNumClases").text("5 Clases")
-                $("#precio").text("USD $50")
-                $(".section__inscripcion").addClass("estilo4");
-
-            });
-    } else if (seleccionado == 5) {
-        $.ajax('inscripcion.html')
-            .done(function (response) {
-                $(".sectionCompra").html(response);
-                $("#modulo").text("05")
-                $("#txtTituloCurso").text("Marketing Deportivo")
-                $("#txtNumClases").text("5 Clases")
-                $("#precio").text("USD $50")
-                $(".section__inscripcion").addClass("estilo5");
-
-            });
-    } else if (seleccionado == 6) {
-        $.ajax('inscripcion.html')
-            .done(function (response) {
-                $(".sectionCompra").html(response);
-                $("#modulo").text("06")
-                $("#txtTituloCurso").text("Marketing Deportivo")
-                $("#txtNumClases").text("5 Clases")
-                $("#precio").text("USD $50")
-                $(".section__inscripcion").addClass("estilo6");
-
-            });
-    }
-
+    $.ajax('inscripcion.html')
+    .done(function (response) {
+        $(".sectionCompra").html(response);
+        $("#modulo").text("0"+id)
+        $("#txtTituloCurso").text(txtInscripcion[(id - 1)][0])
+        $("#txtNumClases").text(txtInscripcion[(id - 1)][1])
+        $("#precio").text(txtInscripcion[(id - 1)][2])
+        $(".section__inscripcion").addClass("estilo"+id);
+    });
 };
