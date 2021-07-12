@@ -9,6 +9,9 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
 }
@@ -237,7 +240,7 @@ input[type="checkbox"]{
 .info-minima-contenidos{
     display: flex;
     align-items: center;
-    background-color: #03091E;
+    background-color: #121F3D;
     color: #EFF0F1;
     padding: 40px 20px 10px 60px;
     overflow: hidden;
@@ -1402,6 +1405,182 @@ footer div:last-child p:last-of-type{
     list-style: none;
 }
 
+/* PAGINA CAMPUS*/
+.container-campus{
+    display: flex;
+}
+.container-campus .content-campus-left{
+    padding: 30px 0 5px 15px;
+    height: 100vh;
+    width: 300px;
+    background-color: #6A6A6A;
+}
+.content-campus-left{
+    display: flex;
+    flex-direction: column;
+}
+.container-campus .logo-eid-campus{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    color: #F6F6F6;
+    font-weight: bold;
+    font-size: 18px;
+}
+.container-campus .logo-eid-campus img{
+    width: 47px;
+    height: 47px;
+    margin-right: 9px;
+}
+.content-campus-left .menu-campus ul,li{
+    list-style: none;
+    padding: 4px 0 0 0;
+}
+.content-campus-left .menu-campus a{
+    color: #F6F6F6;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 0 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content-campus-left .menu-campus a:hover{
+    background-color: #ffffff;
+    color: #6A6A6A;
+    border-radius: 5px;
+}
+/* calendario */
+.container-calendario-campus{
+    margin: 70px 10px 0 10px;
+}
+.container-calendario-campus .calendario{
+    width: 260px;
+    height: 240px;
+    background-color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+.container-calendario-campus h4{
+    color: #F6F6F6;
+    font-size: 19px;
+}
+.container-calendario-campus h5{
+    margin-top: 12px;
+    color: #F6F6F6;
+    font-size: 15px;
+}
+.container-calendario-campus .calendario ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+.container-calendario-campus .calendario .dia1-mes{
+    grid-column-start: 5;
+}
+.container-calendario-campus .dia-semana{
+    background-color: rgba(167, 167, 167, 0.609);
+    font-weight: bold;
+}
+.container-calendario-campus li{
+    text-align: right;
+    padding: 10px 5px;
+}
+.content-campus-right{
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0 0 40px;
+}
+.content-campus-right .botones-clases{
+    display: flex;
+}
+.content-campus-right .botones-clases a{
+    text-decoration: none;
+    color: #6A6A6A;
+    font-size: 16px;
+    border: 1px solid gray;
+    padding: 4px 10px;
+    margin: 0 10px 0 0;
+}
+.content-campus-right .botones-clases span{
+    color: #8E7D80;
+    font-size: 38px;
+    padding-right: 3px;
+}
+.contenido-clase .video-clase{
+    width: 90%;
+    height: 400px;
+    background-color: rgb(160, 159, 159);
+    margin: 30px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+.contenido-clase .descripcion-clase{
+    margin-right: 90px;
+}
+.contenido-clase .descripcion-clase h3{
+    font-size: 30px;
+    color: #515050;
+    text-transform: uppercase;
+}
+/* PAGINA INFO CURSO */
+.img-principal{
+    background-color: #868686;
+    width: 100%;
+    height: 32vh;
+}
+.titulo-infocurso{
+    margin: 20px 0 0 90px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.container-infocurso{
+    margin: 30px 0 0 90px;
+    display: flex;
+    color: #3a3a3a;
+}
+.container-infocurso h3{
+    font-size: 20px;
+    color: #474747;
+}
+.container-infocurso .docentes-curso-left{
+    width: 60%;
+}
+.docentes-curso-left .contenido-docentes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    align-items: center;
+}
+.docentes-curso-left .contenido-docentes h5{
+    padding: 15px 0 0 15px;
+}
+.contenido-docentes .imgs-docentes{
+    margin-top: 15px;
+    border-radius: 50%;
+    background-color: #9b9999;
+    height: 60px;
+    width: 60px;
+}
+.container-infocurso .info-curso-right h3{
+    padding-bottom: 13px;
+}
+.container-infocurso .info-curso-right h5{
+    padding-top: 3px;
+}
+.container-infocurso .info-curso-right a{
+    color: black;
+    text-decoration: none;
+}
+.container-infocurso .info-curso-right a:hover{
+    text-decoration: underline;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 920px) {
 
@@ -2262,9 +2441,9 @@ footer div:last-child p:last-of-type{
         margin: 55px 0 30px 30px;
     }
     .container-slider-inicio .btn-masinfo-inicio .btn-slide1-inicio{
-        margin-top: 210px;
+        margin-top: 230px;
     }
     .container-slider-inicio .btn-masinfo-inicio .btn-slide2-inicio{
-        margin-top: 190px;
+        margin-top: 200px;
     }
 }
