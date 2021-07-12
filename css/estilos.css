@@ -657,13 +657,13 @@ color: #FFFFFF;
     color: #82D940;
     font-size: 1.5rem;
     margin-bottom: 0;
-    background-color: white;
+    
 }
 .autoridades p:nth-of-type(2){
     color: #82D940;
     font-size: 1.313rem;
     margin-bottom: 5px;
-    background-color: white;
+    
 }
 .autoridades img{
     width: 100%;
