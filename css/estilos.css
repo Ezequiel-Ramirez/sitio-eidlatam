@@ -126,6 +126,7 @@ input[type="checkbox"]{
     font-size: 45px;
     letter-spacing: 1px;
     margin-bottom: 80px;
+    text-transform: uppercase;
 }
 .container-slider-inicio .text-slider1-inicio h2{
     font-style: italic;
@@ -139,14 +140,17 @@ input[type="checkbox"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
-    height: 56px;
+    width: 200px;
+    height: 50px;
     background-color: #82D940;
     border-radius: 42px;
-    margin-top: 80px;
+    margin-top: 110px;
     font-size: 23px;
     text-align: center;
     cursor: pointer;
+}
+.container-slider-inicio .btn-masinfo-inicio a{
+    text-decoration: none;
 }
 /* Segundo slide inicio */
 .contenido-slider2{
@@ -178,7 +182,37 @@ input[type="checkbox"]{
     font-size: 32px;
     font-weight: 300;
     font-style: italic;
+}
+/* Tercer slide inicio */
+.contenido-slider3{
+    position: relative;
+}
+.text-slider3-inicio{
+    width: 100%;
+    color: #EFF0F1;
+    padding: 100px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-slider3-inicio h4{
+    font-size: 26px;
+    font-weight: 300;
+}
+.text-slider3-inicio h2{
+    font-size: 45px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    padding-bottom: 20px;
     text-align: center;
+}
+.text-slider3-inicio h3{
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
 }
 /*btns paginacion slider auto*/
 .navigation-auto{
@@ -186,7 +220,7 @@ input[type="checkbox"]{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: -40px;
+    margin-top: -30px;
 }
 .navigation-auto div{
     border: 2px solid #82D940;
@@ -197,20 +231,11 @@ input[type="checkbox"]{
 .navigation-auto div:not(:last-child){
     margin-right: 40px;
 }
-#radio1:checked ~ .navigation-auto {
-    background: #82D940;
-}
-#radio2:checked ~ .navigation-auto {
-    background: #82D940;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3-inicio{
-    background: #82D940;
-}
 /*btns paginacion slider manual*/
 .navigation-manual{
     position: absolute;
     width: 100%;
-    margin-top: -40px;
+    margin-top: -30px;
     display: flex;
     justify-content: center;
 }
@@ -1593,19 +1618,20 @@ nav .logo{
     display: none;
 }
 header nav{
+    height: 55px;
     padding: 0 30px 0 40px;
 }
 .logo-mobile{
     display: flex;
     color: #EFF0F1;
-    padding-left: 20px;
-    width: 80px;
-    height: 50px;
+    padding: 0 3px 0 14px;
+    width: 77px;
+    height: 45px;
 }
 .logo-mobile img{
     object-fit: contain;
-    width: 80px;
-    height: 50px;
+    width: 77px;
+    height: 45px;
 }
 .icon-usuario-carrito i{
     color: #EFF0F1;
@@ -1617,9 +1643,10 @@ header nav{
 }
 nav ul{
     position: absolute;
-    z-index: 100;
-    top: 65px;
+    z-index: 50;
+    top: 55px;
     left: -100%;
+    padding: 0;
     align-content: space-around;
     background: #03091E;
     height: 330px;
@@ -1652,27 +1679,38 @@ nav ul li a{
         text-decoration: none;
     }
     
-/*Slider inicio*/
-/* slide1 */
-.text-slider1-inicio{
-    margin: 65px 0 20px 55px;
-    }    
-.container-slider-inicio .text-slider1-inicio h1{
-    font-size: 40px;
-    padding-top: 10px;
-    margin-bottom: 58px;
-}
-.container-slider-inicio .text-slider1-inicio h2{
-    font-size: 25px;
-}
-.container-slider-inicio .btn-masinfo-inicio button{
-    width: 182px;
-    height: 54px;
-    font-size: 22px;
-}
-.manual-btn:hover{
-    background: none;
-}
+    /*Slider inicio*/
+    /* slide1 */
+    .text-slider1-inicio{
+        margin: 65px 0 0 55px;
+        }    
+    .container-slider-inicio .text-slider1-inicio h1{
+        font-size: 40px;
+        padding-top: 10px;
+        margin-bottom: 58px;
+    }
+    .container-slider-inicio .text-slider1-inicio h2{
+        font-size: 25px;
+    }
+    .container-slider-inicio .btn-masinfo-inicio button{
+        width: 182px;
+        height: 54px;
+        font-size: 22px;
+    }
+    .manual-btn:hover{
+        background: none;
+    }
+    /* Slider 3 inicio */
+    .text-slider3-inicio{
+        padding: 50px 0;
+        text-align: center;
+    }
+    .text-slider3-inicio h2{
+        padding: 10px 0;
+    }
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide3-inicio{
+        margin-top: 80px;
+    }
 /* Info minima */
 .info-minima-contenidos{
     display: flex;
@@ -2032,34 +2070,45 @@ footer div:last-child p:last-of-type{
     position: relative;
     
 }
-
-/*Slider inicio*/
-.text-slider1-inicio{
-    margin: 45px 0 20px 20px;
-}    
-.container-slider-inicio .text-slider1-inicio h1{
-    font-size: 33px;
-    margin-bottom: 50px;
-}
-.container-slider-inicio .text-slider1-inicio h2{
-    font-size: 24px;
-}
-.container-slider-inicio .btn-masinfo-inicio button{
-    width: 152px;
-    height: 47px;
-    font-size: 20px;
-}
-/* slide 2 inicio*/
-.text-slider2-inicio{
-    text-align: center;
-    padding-top: 80px;
-}
-.text-slider2-inicio h2{
-    font-size: 37px;
-    padding: 20px 0;
-}
+    /*Slider inicio*/
+    .text-slider1-inicio{
+        margin: 45px 0 20px 20px;
+    }    
+    .container-slider-inicio .text-slider1-inicio h1{
+        font-size: 33px;
+        margin-bottom: 50px;
+    }
+    .container-slider-inicio .text-slider1-inicio h2{
+        font-size: 24px;
+    }
+    .container-slider-inicio .btn-masinfo-inicio button{
+        width: 152px;
+        height: 47px;
+        font-size: 20px;
+    }
+    /* slide 2 inicio*/
+    .text-slider2-inicio{
+        text-align: center;
+        padding-top: 80px;
+    }
+    .text-slider2-inicio h2{
+        font-size: 37px;
+        padding: 20px 0;
+    }
     .container-slider-inicio .btn-masinfo-inicio .btn-slide2-inicio{
         margin-top: 100px;
+    }
+    /* slide 3 inicio*/
+    .text-slider3-inicio{
+        text-align: center;
+        padding: 40px 0;
+    }
+    .text-slider3-inicio h2{
+        font-size: 34px;
+        padding: 20px 0;
+    }
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide3-inicio{
+        margin-top: 70px;
     }
 /* info minima */
 .info-minima-contenidos, .info-minima-texto{
@@ -2423,7 +2472,32 @@ footer div:last-child p:last-of-type{
 .section__inscripcion div:first-child{
     padding: 30px;
 }
-
+}
+@media (max-width: 300px){
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide1-inicio{
+        margin-top: 150px;
+    }
+    /* slide 2 inicio*/ 
+    .text-slider2-inicio{
+        text-align: center;
+        padding-top: 50px;
+    }
+    .text-slider2-inicio h2{
+        font-size: 32px;
+    }  
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide2-inicio{
+        margin-top: 90px;
+    }
+    /* slide 3 inicio*/ 
+    .text-slider3-inicio{
+        text-align: center;
+    }
+    .text-slider3-inicio h2{
+        font-size: 31px;
+    }
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide3-inicio{
+        margin-top: 40px;
+    }
 }
 @media (min-height: 726px){
     .container-slider-inicio .btn-masinfo-inicio button{
@@ -2439,12 +2513,36 @@ footer div:last-child p:last-of-type{
         font-size: 26px;
     }
     .text-slider1-inicio{
-        margin: 55px 0 30px 30px;
+        margin: 50px 0 30px 30px;
     }
     .container-slider-inicio .btn-masinfo-inicio .btn-slide1-inicio{
-        margin-top: 230px;
+        margin-top: 210px;
     }
     .container-slider-inicio .btn-masinfo-inicio .btn-slide2-inicio{
-        margin-top: 200px;
+        margin-top: 190px;
+    }
+    /* slide 2 inicio*/
+    .text-slider2-inicio{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .text-slider2-inicio h2{
+        font-size: 39px;
+        padding: 30px 0;
+    }
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide2-inicio{
+        margin-top: 150px;
+    }
+    /* slide 3 inicio*/
+    .text-slider3-inicio{
+        text-align: center;
+        padding-top: 60px;
+    }
+    .text-slider3-inicio h2{
+        font-size: 38px;
+        padding: 30px 0;
+    }
+    .container-slider-inicio .btn-masinfo-inicio .btn-slide3-inicio{
+        margin-top: 110px;
     }
 }
