@@ -287,6 +287,27 @@ input[type="checkbox"]{
 .info-minima-texto p{
     font-size: 12px;
 }
+/* BOTON WHATSAPP */
+.container-btn-wsp .btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 32px;
+    right: 27px;
+    background-color: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 31px;
+    box-shadow: 0 1px 10px rgba(0,0,0,.3);
+    z-index: 100;
+}
+.container-btn-wsp .btn-wsp:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #0df053;
+}
 
 #txt{
     width: 80%;
@@ -1725,6 +1746,11 @@ nav ul li a{
     object-fit: cover;
     overflow: auto;
 }
+    /* BOTON WHATSAPP */
+    .container-btn-wsp .btn-wsp{
+        bottom: 45px;
+        right: 28px;
+    }
 
  /* Preguntas frecuentes */
 .titulo-preguntas-frecuentes{
