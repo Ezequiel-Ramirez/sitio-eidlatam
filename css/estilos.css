@@ -15,7 +15,12 @@ html{
 body{
     width: 100%;
 }
-
+main{
+    background-image: url(../img/fondocesped.jpg);
+    background-repeat: repeat-y;
+    background-position-y: 13%;
+    
+}
 /* header */
 header{
     position: sticky;
@@ -347,6 +352,7 @@ color: #FFFFFF;
     font-size: 1.063rem;
     line-height: 20px;
     border: 1px solid #324554;
+    border-radius: 20px;
 }
 .card .content h3{
     font-family: 'Montserrat', sans-serif;
@@ -377,6 +383,7 @@ color: #FFFFFF;
     padding: 10px 0;
     color: #FFFFFF;
     transition: all 0.3s ease;
+    border-radius: 0 0 20px 20px;
 }
 
 .card .sliderImg{
@@ -386,6 +393,7 @@ color: #FFFFFF;
     background-image: url(../img/SliderCursos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 20px 20px 0 0;
 }
 
 .swiper-container {
@@ -500,6 +508,7 @@ color: #FFFFFF;
     color: #EEEEEE;
     font-size: 1.063rem;
     
+    
 }
 .card-testimonial div:first-child{
     width: 100%;
@@ -509,6 +518,7 @@ color: #FFFFFF;
     width: 100%;
     padding: 0 10px;
     background-color: #010513;
+    border-radius: 20px;
 }
 .card-testimonial div:last-child p{
     color: #EEEEEE;
@@ -602,6 +612,8 @@ color: #FFFFFF;
     width: 100%;
     height: 350px;
     margin-bottom: 5px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.342);
 }
 .detail-container div:first-child button{
     width: 129px;
@@ -687,7 +699,17 @@ color: #FFFFFF;
     width: 100%;
     padding: 35px 139px;
     background-color: #f7f5f9;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23030007' fill-opacity='0.06' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url(../img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.organizan{
+    width: 100%;
+    padding: 35px 139px;
+    background-color: #f7f5f9;
+    background-image: none;
+    
 }
 .autoridades h3 span{
     font-weight: normal;
@@ -695,13 +717,16 @@ color: #FFFFFF;
 .autoridades h3, .organizan h3{
     font-size: 2.625rem;
     font-weight: bold;
-    color: #03091E;
+    color: #e9ebf0;
     text-align: center;
 }
 .autoridades p, .organizan p{
     font-size: 1.063rem;
     color: #202020;
     line-height: 20px;
+}
+.autoridades p{
+    color: white;
 }
 .autoridades p:first-of-type{
     color: #82D940;
@@ -718,6 +743,8 @@ color: #FFFFFF;
 .autoridades img{
     width: 100%;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.342);
 }
 
 
@@ -819,6 +846,8 @@ color: #FFFFFF;
     float: left;
     margin-right: 10px;
     transition: all 0.5s ease;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.342);
 }
 .divblog4 .img{
     width: 444px;
@@ -829,6 +858,8 @@ color: #FFFFFF;
     background-size: cover;
     border: #707070;
     margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.342);
     transition: all 0.5s ease;
 }
 .divblog1 .img:hover, .divblog2 .img:hover, .divblog3 .img:hover, .divblog4 .img:hover{
@@ -904,6 +935,8 @@ padding: 20px 0 0 130px;
     background-size: cover;
     background-color: grey;
     margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.342);
 }
 .div-page-blog_3 .img, .div-page-blog_4 .img, .div-page-blog_5 .img, .div-page-blog_6 .img, .div-page-blog_7 .img, .div-page-blog_8 .img, .div-page-blog_1-single .img, .div-page-blog_2-single .img{
     width: 100%;
@@ -914,6 +947,8 @@ padding: 20px 0 0 130px;
     background-size: cover;
     border: #707070;
     transition: all 0.5s ease;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.342);
 }
 .div-page-blog_3 .img:hover, .div-page-blog_4 .img:hover, .div-page-blog_5 .img:hover, .div-page-blog_6 .img:hover, .div-page-blog_7 .img:hover, .div-page-blog_8 .img:hover, .div-page-blog_1-single .img:hover, .div-page-blog_2-single .img:hover{
     filter: opacity(70%);
