@@ -15,12 +15,12 @@ html{
 body{
     width: 100%;
 }
-main{
+/* main{
     background-image: url(../img/fondocesped.jpg);
     background-repeat: repeat-y;
     background-position-y: 13%;
     
-}
+} */
 /* header */
 header{
     position: sticky;
